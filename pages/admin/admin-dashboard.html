@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/admin-workspace.js" defer></script>
+</head>
+
+<body class="workspace-page admin-page">
+    <a href="#admin-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html" aria-current="page">
+                Dashboard
+            </a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-courses.html">Learning paths</a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">View website</a>
+            <button type="button" id="admin-exit-button">
+                Exit admin preview
+            </button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Dashboard</span>
+            </div>
+
+            <span class="admin-preview-label">Admin preview</span>
+        </header>
+
+        <main class="workspace-main" id="admin-main">
+            <p class="eyebrow">PLATFORM OVERVIEW</p>
+            <h1>A clear view of your platform.</h1>
+
+            <p class="workspace-intro">
+                Manage students, organize learning content
+                and review platform performance.
+            </p>
+
+            <p class="mentor-demo-notice">
+                Frontend preview: admin authentication and platform
+                data are not connected yet.
+            </p>
+
+            <section aria-labelledby="admin-statistics-title">
+                <h2
+                    id="admin-statistics-title"
+                    class="lesson-small-heading"
+                >
+                    Platform statistics
+                </h2>
+
+                <div class="admin-stat-grid">
+                    <article class="dashboard-stat">
+                        <h3>Total students</h3>
+                        <p class="admin-stat-value">
+                            <span aria-hidden="true">—</span>
+                            <span class="admin-visually-hidden">
+                                Unavailable
+                            </span>
+                        </p>
+                        <p class="dashboard-footnote">
+                            Registered student accounts
+                        </p>
+                    </article>
+
+                    <article class="dashboard-stat">
+                        <h3>Enabled accounts</h3>
+                        <p class="admin-stat-value">
+                            <span aria-hidden="true">—</span>
+                            <span class="admin-visually-hidden">
+                                Unavailable
+                            </span>
+                        </p>
+                        <p class="dashboard-footnote">
+                            Accounts permitted to access the platform
+                        </p>
+                    </article>
+
+                    <article class="dashboard-stat">
+                        <h3>Published paths</h3>
+                        <p class="admin-stat-value">
+                            <span aria-hidden="true">—</span>
+                            <span class="admin-visually-hidden">
+                                Unavailable
+                            </span>
+                        </p>
+                        <p class="dashboard-footnote">
+                            Learning paths available to students
+                        </p>
+                    </article>
+
+                    <article class="dashboard-stat">
+                        <h3>Issued certificates</h3>
+                        <p class="admin-stat-value">
+                            <span aria-hidden="true">—</span>
+                            <span class="admin-visually-hidden">
+                                Unavailable
+                            </span>
+                        </p>
+                        <p class="dashboard-footnote">
+                            Verified learning completions
+                        </p>
+                    </article>
+                </div>
+
+                <p class="dashboard-footnote">
+                    Statistics will load from the backend.
+                    Unavailable values do not mean zero.
+                </p>
+            </section>
+
+            <section
+                class="module-section"
+                aria-labelledby="admin-management-title"
+            >
+                <h2
+                    id="admin-management-title"
+                    class="lesson-small-heading"
+                >
+                    Manage your platform
+                </h2>
+
+                <div class="admin-management-grid">
+                    <article class="dashboard-card">
+                        <p class="eyebrow">STUDENTS</p>
+                        <h2>Student management</h2>
+
+                        <p>
+                            Find students, review learning progress
+                            and manage account access.
+                        </p>
+
+                        <a
+                            href="../../pages/admin/admin-students.html"
+                            class="button button-outline"
+                        >
+                            Manage students
+                        </a>
+                    </article>
+
+                    <article class="dashboard-card dashboard-sage">
+                        <p class="eyebrow">LEARNING CONTENT</p>
+                        <h2>Learning paths</h2>
+
+                        <p>
+                            Organize levels, lessons, practice tasks
+                            and assessments before publishing.
+                        </p>
+
+                        <a
+                            href="../../pages/admin/admin-courses.html"
+                            class="button button-outline"
+                        >
+                            Manage learning paths
+                        </a>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <p class="eyebrow">ANALYTICS</p>
+                        <h2>Learning performance</h2>
+
+                        <p>
+                            Review student activity, assessment results
+                            and completion trends.
+                        </p>
+
+                        <a
+                            href="../../pages/admin/admin-analytics.html"
+                            class="button button-outline"
+                        >
+                            View analytics
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section
+                class="dashboard-card module-section"
+                aria-labelledby="admin-activity-title"
+            >
+                <div class="dashboard-card-heading">
+                    <h2 id="admin-activity-title">
+                        Recent platform activity
+                    </h2>
+
+                    <span class="admin-preview-label">
+                        Not connected
+                    </span>
+                </div>
+
+                <div class="review-empty-state">
+                    <h3>Activity data is unavailable.</h3>
+
+                    <p>
+                        Recent registrations, content publications
+                        and account changes will appear here
+                        when platform activity is connected.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Admin dashboard
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

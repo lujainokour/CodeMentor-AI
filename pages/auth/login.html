@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/login.js" defer></script>
+</head>
+<body class="auth-page login-page">
+    <main class="auth-layout">
+        <section class="auth-story auth-visual" aria-labelledby="story-title">
+            <a href="../../index.html" class="logo">CodeMentor AI</a>
+            <div class="auth-visual-content">
+                <img src="../../assets/images/codementor-learning.png" width="1122" height="1402" alt="A laptop for learning Python, C# and C++, with a notebook and burgundy cherries on an ice-blue desk.">
+                <h1 id="story-title">One line. A new possibility.</h1>
+                <p>Make room for your next coding breakthrough.</p>
+            </div>
+        </section>
+        <section class="auth-panel" aria-labelledby="login-title">
+            <a href="../../index.html" class="auth-back">
+                <span aria-hidden="true">←</span> Back to home
+            </a>
+
+            <div class="auth-form-container">
+                <p class="eyebrow">WELCOME BACK</p>
+                <h2 id="login-title">Sign in to your workspace.</h2>
+
+                <p class="auth-intro">
+                    Continue your learning journey with CodeMentor AI.
+                </p>
+
+                <form id="login-form" novalidate>
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="username"
+                            autocapitalize="none"
+                            spellcheck="false"
+                            aria-describedby="email-error"
+                            required
+                        >
+
+                        <p class="field-error" id="email-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password</label>
+
+                        <div class="password-field">
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                aria-describedby="password-error"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="password-toggle"
+                                aria-controls="password"
+                                aria-label="Show password"
+                                aria-pressed="false"
+                            >
+                                Show
+                            </button>
+                        </div>
+
+                        <p class="field-error" id="password-error"></p>
+                    </div>
+
+                    <div class="login-options">
+                        <span>Welcome back to your learning space.</span>
+                        <a href="../../pages/auth/forgot-password.html">Forgot password?</a>
+                    </div>
+
+                    <p
+                        class="form-message"
+                        id="login-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                    <button
+                        type="submit"
+                        class="button button-primary auth-submit"
+                        id="login-submit"
+                    >
+                        Sign in
+                    </button>
+                </form>
+
+                <p class="auth-switch">
+                    New to CodeMentor AI?
+                    <a href="../../pages/auth/signup.html">Create an account</a>
+                </p>
+
+                <aside class="demo-account" aria-labelledby="demo-title">
+                    <h3 id="demo-title">Frontend demo</h3>
+
+                    <p>
+                        Use the sample details below to try the student flow.
+                        This version does not authenticate real accounts.
+                    </p>
+
+                    <dl class="demo-credentials">
+                        <div>
+                            <dt>Email</dt>
+                            <dd>student@example.com</dd>
+                        </div>
+
+                        <div>
+                            <dt>Password</dt>
+                            <dd>DemoStudent123!</dd>
+                        </div>
+                    </dl>
+
+                    <button
+                        type="button"
+                        class="button button-outline demo-fill"
+                        id="fill-demo"
+                    >
+                        Fill demo details
+                    </button>
+                </aside>
+            </div>
+
+            <p class="auth-panel-footer">
+                © CodeMentor AI · Learn with clarity.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
+
+

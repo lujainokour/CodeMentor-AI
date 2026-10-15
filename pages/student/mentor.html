@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Mentor | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/mentor.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#mentor-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html" aria-current="page">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / AI Mentor</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="mentor-main">
+            <p class="eyebrow">UNDERSTAND YOUR NEXT STEP</p>
+            <h1>Think it through with your mentor.</h1>
+
+            <p class="workspace-intro">
+                Explore a concept and discuss your approach to a Python task.
+            </p>
+
+            <p id="workspace-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <div class="mentor-demo-notice">
+                Frontend demo · Prepared responses · No live AI connection
+            </div>
+
+            <div class="mentor-layout">
+                <section class="mentor-chat" aria-labelledby="chat-title">
+                    <div class="mentor-chat-header">
+                        <h2 id="chat-title">Your conversation</h2>
+
+                        <button type="button"
+                                class="button button-outline"
+                                id="clear-chat">
+                            Clear chat
+                        </button>
+                    </div>
+
+                    <div
+                        id="chat-messages"
+                        class="chat-messages"
+                        role="log"
+                        aria-label="Conversation messages"
+                        aria-live="polite"
+                        aria-relevant="additions"
+                    ></div>
+
+                    <div class="chat-suggestions" aria-label="Example questions">
+                        <button type="button" data-question="What is a variable?">
+                            Explain variables
+                        </button>
+
+                        <button type="button" data-question="What does input() return?">
+                            Explain input()
+                        </button>
+
+                        <button type="button" data-question="How does range() work?">
+                            Explain range()
+                        </button>
+                    </div>
+
+                    <form id="chat-form" class="chat-form">
+                        <label for="chat-input">Your question</label>
+
+                        <textarea
+                            id="chat-input"
+                            name="message"
+                            rows="3"
+                            maxlength="2000"
+                            placeholder="Ask about a concept or your approach…"
+                            aria-describedby="chat-help"
+                            required
+                        ></textarea>
+
+                        <div class="chat-form-actions">
+                            <span id="chat-help">
+                                Up to 2,000 characters · Shift + Enter for a new line
+                            </span>
+
+                            <button type="submit"
+                                    class="button button-primary"
+                                    id="send-message">
+                                Send
+                            </button>
+                        </div>
+
+                        <p id="chat-status" class="field-error"
+                           role="status" aria-live="polite"></p>
+                    </form>
+                </section>
+
+                <aside class="mentor-context">
+                    <section class="dashboard-card">
+                        <h2>What we’re discussing</h2>
+                        <p id="context-name">Python learning</p>
+
+                        <a href="../../pages/student/module.html?level=1"
+                           class="button button-outline"
+                           id="context-link">
+                            Open current level
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Your saved code</h2>
+
+                        <p id="code-context-note">
+                            Open the mentor from a task to view its saved code.
+                        </p>
+
+                        <pre class="question-code mentor-code" id="context-code"
+                             hidden><code id="context-code-text"></code></pre>
+                    </section>
+
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>A useful question includes…</h2>
+
+                        <ul class="roadmap-requirements">
+                            <li>What you are trying to do</li>
+                            <li>What happened instead</li>
+                            <li>The part you do not understand</li>
+                        </ul>
+
+                        <p class="dashboard-footnote">
+                            Mentor guidance does not run your code
+                            or mark a task complete.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Demo conversations saved in this tab
+            </footer>
+        </main>
+    </div>
+
+    <dialog class="confirmation-dialog" id="clear-dialog"
+            aria-labelledby="clear-title">
+        <h2 id="clear-title">Clear this conversation?</h2>
+        <p>This removes the messages for the current learning context.</p>
+
+        <div class="dialog-actions">
+            <button type="button" class="button button-outline"
+                    id="cancel-clear" autofocus>
+                Cancel
+            </button>
+
+            <button type="button" class="button button-primary"
+                    id="confirm-clear">
+                Clear conversation
+            </button>
+        </div>
+    </dialog>
+</body>
+</html>
+
+

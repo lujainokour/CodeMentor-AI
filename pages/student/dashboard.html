@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/placement-data.js" defer></script>
+    <script src="../../js/python-lessons.js" defer></script><script src="../../js/student-services-store.js" defer></script><script src="../../js/dashboard.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#dashboard-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html" aria-current="page">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+            <a href="../../pages/services/community.html">Student Community</a>
+            <a href="../../pages/services/peer-mentoring.html">Peer Mentoring</a>
+            <a href="../../pages/services/showcase.html">Student Showcase</a>
+            <a href="../../pages/services/freelance-services.html">Student services</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / Dashboard</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="dashboard-main">
+    <p class="eyebrow">YOUR NEXT STEP</p><h1 id="dashboard-greeting">Your demo workspace.</h1>
+    <p class="workspace-intro">Review your selected language, available learning records and private local requests.</p>
+    <p id="dashboard-message" class="form-message" role="status" aria-live="polite"></p>
+    <p class="services-notice" id="dashboard-provenance">Learning and placement records are shared in this browser tab. They are not verified or attributed to the active account. Request counts below are filtered to the current demo account.</p>
+    <div class="dashboard-stats">
+        <article class="dashboard-stat"><p>SELECTED LANGUAGE</p><h2 id="selected-language">Not loaded</h2></article>
+        <article class="dashboard-stat"><p>SHARED PYTHON LESSONS RECORDED</p><h2 id="recorded-lessons">Not loaded</h2><p id="recorded-tasks"></p></article>
+        <article class="dashboard-stat"><p>SHARED PYTHON PLACEMENT</p><h2 id="placement-score">Not loaded</h2></article>
+    </div>
+    <div class="dashboard-grid">
+        <section class="dashboard-card" aria-labelledby="next-title"><p class="eyebrow">BASED ON AVAILABLE RECORDS</p><h2 id="next-title">Next step</h2><p id="next-description"></p><div id="next-actions" class="dashboard-actions"></div><p class="dashboard-footnote">Code execution and task verification are not connected. Saving a solution does not award a task pass or unlock the assessment.</p></section>
+        <section class="dashboard-card dashboard-sage" aria-labelledby="snapshot-title"><h2 id="snapshot-title">Shared placement evidence</h2><div id="skill-snapshot"></div><a id="placement-link" class="button button-outline" href="../../pages/student/onboarding.html">Choose learning preferences</a><p class="dashboard-footnote">Placement results belong to this tab's Python demo history, not a verified student account.</p></section>
+        <section class="dashboard-card" aria-labelledby="path-title"><div class="dashboard-card-heading"><h2 id="path-title">Selected path</h2><a id="path-link" class="dashboard-text-link" href="../../pages/public/languages.html">Browse languages</a></div><ol class="dashboard-levels" id="dashboard-levels"></ol><p class="dashboard-footnote">Only Python Level 01 has the original demo path. Later levels and other full language paths are not available. Locally authored lessons are separate previews.</p><a class="dashboard-text-link" href="../../pages/student/learning-report.html">Preview available learning report</a></section>
+        <section class="dashboard-card" aria-labelledby="activity-title"><h2 id="activity-title">My local activity</h2><p>Only records with the active demo account as owner are counted. No request has been sent to another person or confirmed.</p><dl class="dashboard-local-counts"><div><dt>Booking requests</dt><dd id="booking-count">Not loaded</dd></div><div><dt>Service requests</dt><dd id="request-count">Not loaded</dd></div><div><dt>Private service drafts</dt><dd id="draft-count">Not loaded</dd></div></dl><div class="dashboard-actions"><a class="button button-outline" href="../../pages/student/requests.html">View my local requests</a><a class="dashboard-text-link" href="../../pages/services/service-draft.html">View my private drafts</a></div></section>
+    </div>
+    <footer class="workspace-footer">CodeMentor AI · Frontend demo · Student workspace</footer>
+</main>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/python-lessons.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/course-content-store.js" defer></script>
+    <script src="../../js/lesson-content.js" defer></script>
+    <script src="../../js/lesson.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#lesson-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html" aria-current="page">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Python Foundations / Lesson</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="lesson-main">
+            <a href="../../pages/student/module.html?level=1" class="module-back">
+                ← Back to Python Foundations
+            </a>
+
+            <p class="eyebrow" id="lesson-position"></p>
+            <h1 id="lesson-title">Lesson</h1>
+            <p class="workspace-intro" id="lesson-intro"></p>
+
+            <p
+                id="workspace-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="module-layout">
+                <div>
+                    <article class="dashboard-card">
+                        <h2 id="concept-title"></h2>
+                        <div id="lesson-explanation"></div>
+
+                        <pre class="question-code"><code id="lesson-code"></code></pre>
+
+                        <h3 class="lesson-small-heading">Example output</h3>
+                        <pre class="lesson-output" id="lesson-output"></pre>
+
+                        <p class="dashboard-footnote">
+                            This is a prepared example, not a live code execution.
+                        </p>
+                    </article>
+
+                    <section class="dashboard-card module-section" aria-labelledby="lesson-sources-title">
+                        <h2 id="lesson-sources-title">External learning sources</h2>
+                        <p class="dashboard-footnote">Optional videos, articles and documentation selected for this lesson. These external sites are separate from platform content and open in a new tab.</p>
+                        <div id="lesson-external-sources"></div>
+                    </section>
+                    <section class="dashboard-card module-section"
+                             aria-labelledby="check-title">
+                        <h2 id="check-title">Check your understanding.</h2>
+
+                        <form id="knowledge-form">
+                            <fieldset class="question-options">
+                                <legend id="knowledge-question"></legend>
+                                <div id="knowledge-options"></div>
+                            </fieldset>
+
+                            <button type="submit"
+                                    class="button button-outline">
+                                Check answer
+                            </button>
+
+                            <p
+                                id="knowledge-feedback"
+                                class="form-message lesson-feedback"
+                                role="status"
+                                aria-live="polite"
+                            ></p>
+                        </form>
+
+                        <p class="dashboard-footnote">
+                            This check is for practice. It is not your level assessment.
+                        </p>
+                    </section>
+                </div>
+
+                <aside class="module-aside">
+                    <section class="dashboard-card">
+                        <h2>In this level</h2>
+
+                        <nav aria-label="Level lessons"
+                             class="lesson-navigation"
+                             id="lesson-navigation"></nav>
+                    </section>
+
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Need another explanation?</h2>
+                        <p>Discuss this concept with your mentor.</p>
+
+                        <a href="../../pages/student/mentor.html" class="button button-outline"
+                           id="lesson-mentor-link">
+                            Ask AI Mentor
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Finish this lesson.</h2>
+
+                        <p>
+                            When you have reviewed the explanation and example,
+                            mark this lesson complete.
+                        </p>
+
+                        <p id="completion-status" class="dashboard-meta"></p>
+
+                        <button
+                            type="button"
+                            class="button button-primary lesson-complete"
+                            id="complete-lesson"
+                        >
+                            Complete lesson
+                        </button>
+
+                        <a href="../../pages/student/module.html?level=1"
+                           class="button button-outline"
+                           id="next-activity">
+                            Next activity →
+                        </a>
+
+                        <p class="dashboard-footnote">
+                            Completion is saved in this browser tab.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Python lesson
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+

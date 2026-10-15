@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Level Lessons | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/course-content-store.js" defer></script>
+    <script src="../../js/python-lessons.js" defer></script><script src="../../js/admin-level-content.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a class="skip-link" href="#level-content-main">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-account-access.html">Account access</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="location">
+                Courses
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">Exit admin demo</a>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Level lessons</span>
+            </div>
+
+            <span class="account-pill">Admin demo</span>
+        </header>
+
+        <main class="workspace-main" id="level-content-main">
+<a class="module-back" id="level-content-back" href="../../pages/admin/admin-courses.html">← Back to course content</a>
+<p class="eyebrow">ADMIN / LEVEL LESSONS</p><h1 id="level-content-title">Level lessons</h1>
+<p id="level-content-message" class="form-message" role="status" aria-live="polite"></p>
+<div id="level-content-view" hidden>
+<section class="dashboard-card"><p id="level-course-name" class="eyebrow"></p><p id="level-content-description"></p><ul id="level-content-objectives"></ul><p class="dashboard-footnote">All changes are saved in this tab only. External learning sources are separate from platform lesson content.</p></section>
+<section class="dashboard-card"><h2>Saved lessons</h2><p id="lesson-empty">No lessons saved in this level yet. Add your first lesson below.</p><ul id="level-lessons" class="course-level-list"></ul><button type="button" class="button button-outline" id="new-lesson">Start a new lesson</button></section>
+<div class="content-editor-grid">
+<section class="dashboard-card"><h2 id="lesson-editor-title">Add a lesson</h2>
+<form id="lesson-editor" class="content-editor"><fieldset>
+<div class="form-field"><label for="edit-lesson-title">Lesson title</label><input id="edit-lesson-title" maxlength="120" required></div>
+<div class="form-field"><label for="edit-lesson-summary">Short introduction</label><textarea id="edit-lesson-summary" rows="3" maxlength="1000"></textarea></div>
+<div class="form-field"><label for="edit-lesson-builtin">Existing Python demo lesson (optional)</label><select id="edit-lesson-builtin"><option value="">Use my own platform content</option></select><p class="field-help">Link an existing Python lesson to keep its prepared explanation and attach your own external sources.</p></div>
+<div class="form-field"><label for="edit-lesson-content">Platform explanation (plain text)</label><textarea id="edit-lesson-content" rows="10" maxlength="30000"></textarea><p class="field-help">Separate paragraphs with blank lines. HTML is displayed as text, not executed.</p></div>
+<div class="form-field"><label for="edit-lesson-code">Prepared code example (optional)</label><textarea id="edit-lesson-code" rows="6" maxlength="15000" spellcheck="false"></textarea></div>
+<div class="form-field"><label for="edit-lesson-output">Prepared example output (optional)</label><textarea id="edit-lesson-output" rows="3" maxlength="10000"></textarea></div>
+<div class="form-field"><label for="edit-lesson-minutes">Estimated minutes</label><input id="edit-lesson-minutes" type="number" min="1" max="600" step="1" value="10" required></div>
+<div class="form-field"><label for="edit-lesson-status">Local visibility</label><select id="edit-lesson-status"><option value="draft">Draft — admin preview only</option><option value="published">Available in local student preview</option></select></div>
+<p id="lesson-dirty-note" class="field-help" role="status"></p><button class="button button-primary" type="submit">Save lesson locally</button>
+</fieldset></form></section>
+<section class="dashboard-card"><h2>External learning sources</h2><p>Videos, articles or official documentation you choose. No sources are added automatically. External websites are independent of CodeMentor AI.</p>
+<ul id="lesson-sources" class="content-source-list"></ul>
+<form id="source-editor" class="content-editor"><fieldset id="source-fields" disabled>
+<div class="form-field"><label for="source-title">Source title</label><input id="source-title" maxlength="120" required></div>
+<div class="form-field"><label for="source-url">Source URL (HTTP or HTTPS)</label><input id="source-url" type="url" maxlength="2000" placeholder="Paste the full link to your chosen source" required></div>
+<div class="content-actions"><button id="save-source" class="button button-primary" type="submit">Add source</button><button id="cancel-source" class="button button-outline" type="button">Cancel source edit</button></div>
+</fieldset></form></section>
+</div></div>
+</main>
+    </div>
+</body>
+</html>
+
+
+
+

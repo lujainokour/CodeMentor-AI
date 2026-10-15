@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Content | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/course-content-store.js" defer></script>
+    <script src="../../js/admin-course-content.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a class="skip-link" href="#course-content-main">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-account-access.html">Account access</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="location">
+                Courses
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">Exit admin demo</a>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Course content</span>
+            </div>
+
+            <span class="account-pill">Admin demo</span>
+        </header>
+
+        <main class="workspace-main" id="course-content-main">
+            <a href="../../pages/admin/admin-courses.html" class="module-back">
+                ← Back to courses
+            </a>
+
+            <p class="eyebrow">COURSE MANAGEMENT</p>
+            <h1 id="course-content-title">Course content</h1>
+
+            <p
+                id="course-content-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div id="course-content-view" hidden>
+                <section
+                    class="dashboard-card course-content-summary"
+                    aria-labelledby="course-overview-title"
+                >
+                    <div>
+                        <h2 id="course-overview-title">Course overview</h2>
+                        <p id="course-content-description"></p>
+                    </div>
+
+                    <dl class="course-content-facts">
+                        <div>
+                            <dt>Language</dt>
+                            <dd id="course-content-language"></dd>
+                        </div>
+
+                        <div>
+                            <dt>Status</dt>
+                            <dd id="course-content-status"></dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section
+                    class="dashboard-card module-section"
+                    aria-labelledby="course-levels-title"
+                >
+                    <div class="course-content-heading">
+                        <div>
+                            <h2 id="course-levels-title">Learning levels</h2>
+                            <p class="dashboard-footnote">
+                                Organize the course into levels,
+                                then add lessons and requirements.
+                            </p>
+                        </div>
+
+                        <a
+                            href="../../pages/admin/admin-level-create.html"
+                            class="button button-primary"
+                            id="course-add-level"
+                        >
+                            Add level
+                            <span aria-hidden="true">+</span>
+                        </a>
+                    </div>
+
+                    <p
+                        id="course-level-count"
+                        class="dashboard-footnote"
+                    ></p>
+
+                    <ol
+                        class="course-level-list"
+                        id="course-level-list"
+                    ></ol>
+
+                    <div
+                        class="course-content-empty"
+                        id="course-level-empty"
+                        hidden
+                    >
+                        <span aria-hidden="true">≡</span>
+                        <h3>No levels yet.</h3>
+                        <p>
+                            Add the first level to begin organizing
+                            this course.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="dashboard-card module-section">
+                    <h2>Before publishing</h2>
+
+                    <p>
+                        Review the lessons, coding tasks, assessments
+                        and final project requirements.
+                    </p>
+
+                    <p class="dashboard-footnote">
+                        Publishing and student access are not connected
+                        in this frontend demo.
+                    </p>
+                </section>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Admin demo · Course content
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

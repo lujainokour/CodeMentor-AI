@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Workspace | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/workspace.js" defer></script>
+</head>
+<body class="coding-page">
+    <header class="container onboarding-header">
+    <script src="../../js/theme.js"></script>
+        <a href="../../pages/student/module.html?level=1" class="auth-back">
+            ← Python Foundations
+        </a>
+
+        <a href="../../pages/student/dashboard.html" class="logo">CodeMentor AI</a>
+
+        <span id="draft-status" class="coding-save-status"
+              role="status" aria-live="polite">
+            Loading draft…
+        </span>
+    </header>
+
+    <main class="container coding-layout">
+        <aside class="coding-task-panel">
+            <p class="eyebrow">LEVEL 01 · REQUIRED TASK</p>
+            <h1 id="task-title">Coding task</h1>
+            <p id="task-description"></p>
+
+            <h2>Requirements</h2>
+            <ol id="task-requirements"></ol>
+
+            <h2>Example input</h2>
+            <pre class="lesson-output" id="example-input"></pre>
+
+            <h2>Expected output</h2>
+            <pre class="lesson-output" id="expected-output"></pre>
+
+            <div class="placement-info">
+                <h3>How completion works</h3>
+                <p>
+                    This editor saves drafts locally. Code execution and required task tests are not connected.
+                    No task pass is awarded by this frontend demo.
+                </p>
+            </div>
+
+            <a href="../../pages/student/mentor.html" class="button button-outline"
+               id="mentor-link">
+                Ask AI Mentor
+            </a>
+        </aside>
+
+        <section class="coding-editor-panel" aria-labelledby="editor-title">
+            <div class="coding-editor-header">
+                <h2 id="editor-title">main.py</h2>
+                <span>Python</span>
+            </div>
+
+            <label for="code-editor" class="coding-label">
+                Your solution
+            </label>
+
+            <textarea
+                id="code-editor"
+                class="code-editor"
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="off"
+                aria-describedby="editor-help"
+            ></textarea>
+
+            <p id="editor-help" class="coding-help">
+                Write Python code here. Tab inserts four spaces;
+                Escape then Tab moves focus out of the editor.
+            </p>
+
+            <label for="program-input" class="coding-label">
+                Standard input
+            </label>
+
+            <textarea
+                id="program-input"
+                class="program-input"
+                spellcheck="false"
+                placeholder="Enter each input value on a separate line"
+            ></textarea>
+
+            <div class="coding-toolbar">
+                <button type="button" class="button button-outline"
+                        id="save-draft">
+                    Save draft
+                </button>
+
+                <button type="button" class="button button-outline"
+                        id="reset-code">
+                    Reset code
+                </button>
+
+                <button type="button" class="button button-outline"
+                        id="run-code">
+                    Run code
+                </button>
+
+                <button type="button" class="button button-primary"
+                        id="submit-code">
+                    Submit solution
+                </button>
+            </div>
+
+            <p id="workspace-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <section class="coding-output-panel" aria-labelledby="output-title">
+                <h2 id="output-title">Output</h2>
+                <pre id="program-output">Your program output will appear here after execution.</pre>
+            </section>
+
+            <p class="coding-help">
+                Frontend demo: Python execution and required tests are
+                waiting for the backend connection.
+            </p>
+        </section>
+    </main>
+
+    <dialog class="confirmation-dialog" id="reset-dialog"
+            aria-labelledby="reset-title">
+        <h2 id="reset-title">Reset your code?</h2>
+        <p>
+            This replaces your saved solution with the task’s starter code.
+            Your standard input will also be reset.
+        </p>
+
+        <div class="dialog-actions">
+            <button type="button" class="button button-outline"
+                    id="cancel-reset" autofocus>
+                Cancel
+            </button>
+
+            <button type="button" class="button button-primary"
+                    id="confirm-reset">
+                Reset
+            </button>
+        </div>
+    </dialog>
+
+    <footer class="container onboarding-footer">
+        CodeMentor AI · Frontend coding workspace
+    </footer>
+    <a href="../../pages/student/code-review.html"
+   class="dashboard-text-link"
+   id="open-code-review">
+    View code review →
+</a>
+</body>
+</html>
+
+

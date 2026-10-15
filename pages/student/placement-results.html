@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Results | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/placement-data.js" defer></script>
+    <script src="../../js/placement-results.js" defer></script>
+</head>
+<body>
+    <header class="container onboarding-header">
+    <script src="../../js/theme.js"></script>
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+
+        <a href="../../pages/student/dashboard.html" class="button button-primary">
+            Go to dashboard →
+        </a>
+    </header>
+
+    <main class="container results-page">
+        <p class="eyebrow">STEP 3 OF 3 · YOUR STARTING POINT</p>
+
+        <h1>Your learning path starts here.</h1>
+
+        <p class="results-intro">
+            Your Python assessment gives us an initial look at your
+            strengths and what to practise next.
+        </p>
+
+        <p
+            class="form-message"
+            id="results-message"
+            role="status"
+            aria-live="polite"
+        ></p>
+
+        <div id="results-content" hidden>
+            <div class="results-grid">
+                <section class="score-card" aria-labelledby="score-title">
+                    <p class="eyebrow">YOUR ASSESSMENT RESULT</p>
+                    <h2 id="score-title">Your initial snapshot</h2>
+
+                    <div class="score-circle">
+                        <strong id="score-percentage">0%</strong>
+                    </div>
+
+                    <p id="score-count"></p>
+                    <p id="response-summary" class="score-detail"></p>
+
+                    <div class="score-note">
+                        This placement assessment has no pass or fail threshold.
+                        More practice will give us a fuller picture.
+                    </div>
+                </section>
+
+                <section class="skills-card" aria-labelledby="skills-title">
+                    <h2 id="skills-title">A closer look at your skills.</h2>
+
+                    <p class="preference-help">
+                        Correct responses by topic. “I’m not sure”
+                        responses contribute no points.
+                    </p>
+
+                    <div id="topic-results"></div>
+                </section>
+            </div>
+
+            <section class="starting-level" aria-labelledby="level-title">
+                <div>
+                    <p class="eyebrow">YOUR NEXT STEP · LEVEL 01</p>
+
+                    <h2 id="level-title">Python Foundations</h2>
+
+                    <p>
+                        Begin with variables, data types, input and output.
+                        Complete the required activities to unlock Level 02.
+                    </p>
+                </div>
+
+                <a href="../../pages/student/dashboard.html" class="button button-primary">
+                    Go to dashboard →
+                </a>
+            </section>
+
+            <section class="results-explanation">
+                <h2>What should you practise next?</h2>
+
+                <p id="practice-suggestion"></p>
+
+                <p class="results-footnote">
+                    These suggestions use your assessment results.
+                    They are not an AI-generated evaluation.
+                </p>
+            </section>
+
+            <details class="results-review">
+                <summary>Review submitted answers</summary>
+                <div id="submitted-answers"></div>
+            </details>
+        </div>
+    </main>
+
+    <footer class="container onboarding-footer">
+        CodeMentor AI · Frontend demo · Python placement results
+    </footer>
+</body>
+</html>
+

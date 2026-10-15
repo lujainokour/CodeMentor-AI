@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Course | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-create.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a class="skip-link" href="#course-create-main">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-account-access.html">Account access</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="location">
+                Courses
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">Exit admin demo</a>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Create course</span>
+            </div>
+
+            <span class="account-pill">Admin demo</span>
+        </header>
+
+        <main class="workspace-main" id="course-create-main">
+            <a href="../../pages/admin/admin-courses.html" class="module-back">
+                ← Back to courses
+            </a>
+
+            <p class="eyebrow">COURSE MANAGEMENT</p>
+            <h1>Create a new course.</h1>
+
+            <p class="workspace-intro">
+                Start with the course details.
+                Lessons, tasks and assessments come next.
+            </p>
+
+            <div class="course-create-layout">
+                <section
+                    class="dashboard-card"
+                    aria-labelledby="course-details-title"
+                >
+                    <h2 id="course-details-title">Course details</h2>
+
+                    <form id="course-create-form">
+                        <div class="course-create-field">
+                            <label for="course-title">Course name</label>
+
+                            <input
+                                id="course-title"
+                                name="title"
+                                type="text"
+                                maxlength="80"
+                                placeholder="e.g. C# Foundations"
+                                aria-describedby="course-title-help"
+                                required
+                            >
+
+                            <p
+                                class="dashboard-footnote"
+                                id="course-title-help"
+                            >
+                                Use a clear title. Maximum 80 characters.
+                            </p>
+                        </div>
+
+                        <div class="course-create-field">
+                            <label for="course-language">
+                                Programming language
+                            </label>
+
+                            <select
+                                id="course-language"
+                                name="language"
+                                aria-describedby="course-language-help"
+                                required
+                            ><option value="">Select a language</option></select>
+
+                            <p
+                                class="dashboard-footnote"
+                                id="course-language-help"
+                            >
+                                Creating a draft does not activate
+                                a student learning path.
+                            </p>
+                        </div>
+
+                        <div class="course-create-field">
+                            <label for="course-description">
+                                Course description
+                            </label>
+
+                            <textarea
+                                id="course-description"
+                                name="description"
+                                rows="6"
+                                maxlength="600"
+                                placeholder="Describe what students will learn."
+                                aria-describedby="course-description-help"
+                                required
+                            ></textarea>
+
+                            <p
+                                class="dashboard-footnote"
+                                id="course-description-help"
+                            >
+                                Explain the course goal.
+                                Maximum 600 characters.
+                            </p>
+                        </div>
+
+                        <div class="course-create-actions">
+                            <button
+                                class="button button-primary"
+                                id="course-create-submit"
+                                type="submit"
+                            >
+                                Create draft
+                            </button>
+
+                            <a
+                                href="../../pages/admin/admin-courses.html"
+                                class="button button-outline"
+                            >
+                                Cancel
+                            </a>
+                        </div>
+
+                        <p
+                            id="course-create-message"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </form>
+                </section>
+
+                <aside class="course-create-aside">
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>A draft comes first.</h2>
+
+                        <p>
+                            New courses start as drafts.
+                            Add and review the learning content
+                            before making a course available.
+                        </p>
+
+                        <ul class="course-create-checklist">
+                            <li>Course details</li>
+                            <li>Levels and lessons</li>
+                            <li>Tasks and assessments</li>
+                            <li>Final project requirements</li>
+                        </ul>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Frontend demo</h2>
+
+                        <p>
+                            Drafts are saved in this browser tab.
+                            They are not uploaded to a server.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Admin demo · Create course
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

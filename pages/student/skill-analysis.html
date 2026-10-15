@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Analysis | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/placement-data.js" defer></script>
+    <script src="../../js/skill-analysis.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#analysis-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html" aria-current="page">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>My progress / Skill analysis</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="analysis-main">
+            <a href="../../pages/student/progress.html" class="module-back">
+                ← Back to my progress
+            </a>
+
+            <p class="eyebrow">UNDERSTAND WHAT TO PRACTISE NEXT</p>
+            <h1>Turn insights into your next step.</h1>
+
+            <p class="workspace-intro">
+                Explore the evidence from your placement assessment
+                and identify topics to revisit.
+            </p>
+
+            <p id="workspace-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <section id="analysis-empty" class="dashboard-card" hidden>
+                <h2>Your skill snapshot is not ready yet.</h2>
+                <p>
+                    Submit your placement assessment to see
+                    a breakdown of your answers by topic.
+                </p>
+
+                <a href="../../pages/student/placement-intro.html"
+                   class="button button-outline"
+                   id="analysis-placement-link">
+                    Start placement
+                </a>
+            </section>
+
+            <div id="analysis-content" hidden>
+                <div class="mentor-demo-notice">
+                    Early insights · Based on 10 placement responses.
+                    This is a small sample, not a complete measure of mastery.
+                </div>
+
+                <div class="dashboard-grid">
+                    <section class="dashboard-card">
+                        <h2>Your placement snapshot</h2>
+
+                        <p class="preference-help">
+                            Correct answers by topic.
+                            “I’m not sure” responses earn no points.
+                        </p>
+
+                        <div id="analysis-topics"></div>
+
+                        <a href="../../pages/student/placement-results.html"
+                           class="button button-outline">
+                            Review placement results
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Your practice focus</h2>
+                        <p id="priority-description"></p>
+
+                        <ul id="priority-topics"
+                            class="roadmap-requirements"></ul>
+
+                        <a href="../../pages/student/module.html?level=1"
+                           class="button button-outline"
+                           id="priority-link">
+                            Open current level
+                        </a>
+
+                        <p class="dashboard-footnote">
+                            Recommendations do not unlock levels.
+                            Complete the required activities in order.
+                        </p>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>What this evidence tells us</h2>
+
+                        <ul class="roadmap-requirements">
+                            <li>Each topic has only two or four placement questions.</li>
+                            <li>A lower score suggests a useful topic to practise.</li>
+                            <li>A perfect score is encouraging, but does not prove mastery.</li>
+                            <li>Reading a lesson is tracked separately from assessment results.</li>
+                        </ul>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Make sense of a concept.</h2>
+
+                        <p>
+                            Explore an explanation in the mentor demo,
+                            then apply the concept in your learning tasks.
+                        </p>
+
+                        <a href="../../pages/student/mentor.html" class="button button-outline">
+                            Open AI Mentor
+                        </a>
+
+                        <p class="dashboard-footnote">
+                            This page uses answer-key calculations.
+                            No AI analysis has been generated.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Placement-based insights
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

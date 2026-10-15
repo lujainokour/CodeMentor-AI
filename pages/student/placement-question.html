@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Questions | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/placement-data.js" defer></script>
+    <script src="../../js/placement-question.js" defer></script>
+</head>
+<body>
+    <header class="container onboarding-header">
+    <script src="../../js/theme.js"></script>
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <a href="../../pages/student/placement-intro.html" class="button button-outline">
+            Save and exit
+        </a>
+    </header>
+
+    <main class="container assessment-layout">
+        <aside class="assessment-sidebar">
+            <p class="eyebrow">PYTHON PLACEMENT</p>
+            <h2>Find your starting point.</h2>
+
+            <p class="preference-help">
+                About 15 minutes. No time limit.
+            </p>
+
+            <nav aria-label="Question navigation">
+                <div id="question-navigation" class="question-navigation"></div>
+            </nav>
+
+            <p id="answer-count" class="preference-help"></p>
+
+            <div class="placement-info">
+                <h3>Not sure yet?</h3>
+                <p>
+                    Choose “I’m not sure.” Honest answers help us
+                    identify what to practise next.
+                </p>
+            </div>
+
+            <p id="save-status" role="status" aria-live="polite"></p>
+        </aside>
+
+        <section class="question-panel" aria-labelledby="question-title">
+            <p class="eyebrow" id="question-position"></p>
+
+            <progress
+                id="question-progress"
+                max="10"
+                value="1"
+                aria-label="Current question position"
+            ></progress>
+
+            <p id="question-topic" class="preference-help"></p>
+            <h2 id="question-title" tabindex="-1"></h2>
+
+            <pre class="question-code" id="question-code"><code id="code-content"></code></pre>
+
+            <fieldset class="question-options">
+                <legend>Select one answer</legend>
+                <div id="answer-options"></div>
+            </fieldset>
+
+            <p id="question-message"
+               class="form-message"
+               role="status"
+               aria-live="polite"></p>
+
+            <div class="question-actions">
+                <button type="button"
+                        class="button button-outline"
+                        id="previous-question">
+                    Previous
+                </button>
+
+                <button type="button"
+                        class="button button-primary"
+                        id="next-question">
+                    Next question →
+                </button>
+            </div>
+
+            <button type="button"
+                    class="button button-outline review-button"
+                    id="review-answers">
+                Review answers
+            </button>
+        </section>
+    </main>
+
+    <footer class="container onboarding-footer">
+        CodeMentor AI · Frontend demo · Python placement
+    </footer>
+</body>
+</html>
+

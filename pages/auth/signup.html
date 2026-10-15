@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/signup.js" defer></script>
+</head>
+<body class="auth-page">
+    <main class="auth-layout">
+        <section class="auth-story" aria-labelledby="story-title">
+            <a href="../../index.html" class="logo">CodeMentor AI</a>
+
+            <div class="auth-story-content">
+                <p class="eyebrow">START YOUR JOURNEY</p>
+
+                <h1 id="story-title">
+                    Your first line opens a new possibility.
+                </h1>
+
+                <p>
+                    Build your Python skills through clear lessons,
+                    practical challenges and contextual mentor guidance.
+                </p>
+
+                <div class="auth-code">
+                    <div class="auth-code-header">
+                        <span>signup_example.py</span>
+                        <span>Python</span>
+                    </div>
+
+                    <pre><code>student_name = "Lujain Okour"
+learning_track = "Python"
+
+print("Ready to start learning!")</code></pre>
+
+                    <div class="auth-code-output">
+                        → Ready to start learning!
+                    </div>
+                </div>
+
+                <h2>Build your coding confidence.</h2>
+                <p>
+                    Start with foundations and work toward a project
+                    you can call your own.
+                </p>
+            </div>
+
+            <p class="auth-story-footer">
+                CodeMentor AI · Your personal coding mentor.
+            </p>
+        </section>
+
+        <section class="auth-panel" aria-labelledby="signup-title">
+            <a href="../../index.html" class="auth-back">
+                <span aria-hidden="true">←</span> Back to home
+            </a>
+
+            <div class="auth-form-container">
+                <p class="eyebrow">CREATE ACCOUNT</p>
+                <h2 id="signup-title">Start your learning journey.</h2>
+
+                <p class="auth-intro">
+                    Enter your details, then choose your learning preferences.
+                </p>
+
+                <form id="signup-form" novalidate>
+                    <div class="form-field">
+                        <label for="full-name">Full name</label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            placeholder="e.g. Lujain Okour"
+                            autocomplete="name"
+                            maxlength="80"
+                            aria-describedby="name-error"
+                            required
+                        >
+
+                        <p class="field-error" id="name-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="username"
+                            autocapitalize="none"
+                            spellcheck="false"
+                            aria-describedby="email-error"
+                            required
+                        >
+
+                        <p class="field-error" id="email-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120" step="1" inputmode="numeric" aria-describedby="age-help age-error" required>
+                        <p class="field-help" id="age-help">Private demo profile data. Your age is not shown in public profiles.</p>
+                        <p class="field-error" id="age-error"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+
+                        <div class="password-field">
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="12"
+                                aria-describedby="password-help password-error"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-password-target="password"
+                                aria-controls="password"
+                                aria-label="Show password"
+                                aria-pressed="false"
+                            >
+                                Show
+                            </button>
+                        </div>
+
+                        <p class="field-help" id="password-help">
+                            Use at least 12 characters. A memorable passphrase works well.
+                        </p>
+
+                        <p class="field-error" id="password-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="confirm-password">Confirm password</label>
+
+                        <div class="password-field">
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                name="confirmPassword"
+                                placeholder="Re-enter your password"
+                                autocomplete="new-password"
+                                aria-describedby="confirm-error"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-password-target="confirm-password"
+                                aria-controls="confirm-password"
+                                aria-label="Show confirmation password"
+                                aria-pressed="false"
+                            >
+                                Show
+                            </button>
+                        </div>
+
+                        <p class="field-error" id="confirm-error"></p>
+                    </div>
+
+                    <p
+                        class="form-message"
+                        id="signup-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                    <button
+                        type="submit"
+                        class="button button-primary auth-submit"
+                        id="signup-submit"
+                    >
+                        Continue to onboarding
+                    </button>
+                </form>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="../../pages/auth/login.html">Sign in</a>
+                </p>
+
+                <aside class="demo-account">
+                    <h3>Frontend demo</h3>
+                    <p>
+                        This form checks your entries and saves a temporary
+                        demo profile in this tab. It does not create a real
+                        account or store your password.
+                        Sign in continues to use the sample account shown on the login page.
+                    </p>
+                </aside>
+            </div>
+
+            <p class="auth-panel-footer">
+                © CodeMentor AI · Learn with clarity.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
+
+

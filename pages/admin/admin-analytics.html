@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Analytics | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/course-content-store.js" defer></script>
+    <script src="../../js/admin-student-data.js" defer></script><script src="../../js/admin-analytics.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a class="skip-link" href="#analytics-main">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-account-access.html">Account access</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="location">
+                Courses
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">Exit admin demo</a>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Course content</span>
+            </div>
+
+            <span class="account-pill">Admin demo</span>
+        </header>
+
+        <main class="workspace-main" id="analytics-main"><p class="eyebrow">ADMIN / LOCAL DEMO ANALYTICS</p><h1>Understand the available records.</h1><p class="workspace-intro">Counts below come from fictional student samples and locally saved course content. They are not live platform analytics.</p><p id="analytics-message" class="form-message" role="status"></p><div id="analytics-content"></div></main>
+    </div>
+</body>
+</html>
+
+
+
+

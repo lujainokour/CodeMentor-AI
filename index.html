@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeMentor AI | Learn to Code</title>
+
+    <meta
+        name="description"
+        content="Learn programming through guided lessons, practical tasks and contextual mentorship. Explore the Python-first CodeMentor AI demo."
+    >
+
+    <link
+        rel="icon"
+        href="assets/images/Burgundy CMA cherry monogram logo.png"
+        type="image/png"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/language-catalog.js" defer></script>
+    <script src="js/workspace-shell.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/hero-background.js" defer></script>
+    <script src="js/home-effects.js" defer></script>
+</head>
+
+<body class="home-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    
+    <header class="site-header">
+    <script src="js/theme.js"></script>
+        <nav class="container navbar" aria-label="Main navigation">
+            <a class="logo brand-logo" href="index.html">
+                <img
+                    src="assets/images/Burgundy CMA cherry monogram logo.png"
+                    alt=""
+                    width="64"
+                    height="64"
+                >
+                <span>
+                    CodeMentor <span class="brand-ai">AI</span>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-controls="navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navigation" id="navigation">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#modules">Languages</a>
+                <a href="#student-services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+
+                <div class="nav-actions">
+                    <a href="pages/auth/login.html" class="button button-outline">
+                        Sign in
+                    </a>
+
+                    <a href="pages/auth/signup.html" class="button button-primary">
+                        Get started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        
+        <section
+            class="hero-video-shell"
+            aria-labelledby="hero-title"
+        >
+            
+            <svg
+                class="hero-energy"
+                viewBox="0 0 1440 800"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+            >
+                <defs>
+                    <filter
+                        id="hero-energy-glow"
+                        x="-50%"
+                        y="-100%"
+                        width="200%"
+                        height="300%"
+                    >
+                        <feGaussianBlur stdDeviation="3"/>
+                    </filter>
+                </defs>
+
+                <g class="energy-tracks">
+                    <path d="M1120 230H900L860 270H760L720 310H560"/>
+                    <path d="M1080 400H920L880 360H790L740 410H580"/>
+                    <path d="M1120 570H940L890 520H800L750 470H560"/>
+                </g>
+
+                <g
+                    class="energy-pulses energy-glow"
+                    filter="url(#hero-energy-glow)"
+                >
+                    <path
+                        pathLength="100"
+                        d="M1120 230H900L860 270H760L720 310H560"
+                    />
+                    <path
+                        pathLength="100"
+                        d="M1080 400H920L880 360H790L740 410H580"
+                    />
+                    <path
+                        pathLength="100"
+                        d="M1120 570H940L890 520H800L750 470H560"
+                    />
+                </g>
+
+                <g class="energy-pulses">
+                    <path
+                        pathLength="100"
+                        d="M1120 230H900L860 270H760L720 310H560"
+                    />
+                    <path
+                        pathLength="100"
+                        d="M1080 400H920L880 360H790L740 410H580"
+                    />
+                    <path
+                        pathLength="100"
+                        d="M1120 570H940L890 520H800L750 470H560"
+                    />
+                </g>
+            </svg>
+
+            
+            <div class="hero-video-background" aria-hidden="true">
+                <video
+                    id="hero-background-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                >
+                    <source
+                        src="assets/videos/hero_editor_logos.mp4"
+                        type="video/mp4"
+                    >
+                </video>
+            </div>
+
+            <div class="container hero hero-video-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">A CLEARER WAY TO LEARN</p>
+
+                    <h1 id="hero-title">
+                        Learn to code<br>
+                        with an AI mentor<br>
+                        by your side.
+                    </h1>
+
+                    <p class="hero-description">
+                        Personalized guidance, practical challenges
+                        and a clear learning path to help you
+                        build confidence with every line.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a
+                            href="pages/auth/signup.html"
+                            class="button button-primary"
+                        >
+                            Start learning
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a
+                            href="pages/public/demo.html"
+                            class="button button-outline"
+                        >
+                            Explore demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="hero-motion-toggle"
+                id="hero-motion-toggle"
+                aria-controls="hero-background-video"
+                hidden
+            >
+                Play background
+            </button>
+        </section>
+
+        
+        <div class="home-content">
+
+            
+            <section
+                class="hc-section"
+                id="features"
+                aria-labelledby="hc-features-title"
+            >
+                <div class="container">
+                    <div class="hc-section-label">
+                        <span>01</span>
+                        THE EXPERIENCE
+                    </div>
+
+                    <div class="hc-heading-layout">
+                        <h2 id="hc-features-title">
+                            Learn your way.<br>
+                            <span>Understand every step.</span>
+                        </h2>
+
+                        <p class="hc-intro">
+                            Know where to start, practise with purpose
+                            and ask questions when you need guidance.
+                        </p>
+                    </div>
+
+                    <div class="hc-features">
+                        <article>
+                            <span class="hc-symbol" aria-hidden="true">
+                                ⌖
+                            </span>
+
+                            <h3>Find your starting point.</h3>
+
+                            <p>
+                                Share your experience and complete placement
+                                to identify the concepts you need to practise.
+                            </p>
+
+                            <span class="hc-caption">
+                                PLACEMENT & PERSONAL GOALS
+                            </span>
+                        </article>
+
+                        <article>
+                            <span
+                                class="hc-symbol hc-code-symbol"
+                                aria-hidden="true"
+                            >
+                                &lt;/&gt;
+                            </span>
+
+                            <h3>Learn by writing code.</h3>
+
+                            <p>
+                                Turn each concept into a practical task.
+                                Build your understanding through doing.
+                            </p>
+
+                            <span class="hc-caption">
+                                LESSONS & CODING TASKS
+                            </span>
+                        </article>
+
+                        <article>
+                            <span class="hc-symbol" aria-hidden="true">
+                                ✦
+                            </span>
+
+                            <h3>Ask. Think. Try again.</h3>
+
+                            <p>
+                                Use mentor hints to explore an idea,
+                                understand a mistake and improve your approach.
+                            </p>
+
+                            <span class="hc-caption">
+                                CONTEXTUAL MENTORSHIP
+                            </span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section
+                class="hc-section hc-dark"
+                id="how-it-works"
+                aria-labelledby="hc-journey-title"
+            >
+                <div class="container">
+                    <div class="hc-section-label">
+                        <span>02</span>
+                        YOUR JOURNEY
+                    </div>
+
+                    <div class="hc-heading-layout">
+                        <h2 id="hc-journey-title">
+                            A clear path.<br>
+                            <span>From curiosity to code.</span>
+                        </h2>
+
+                        <p class="hc-intro">
+                            Every stage has a purpose.
+                            Follow the journey at your own pace.
+                        </p>
+                    </div>
+
+                    <ol class="hc-journey">
+                        <li>
+                            <span
+                                class="hc-step-number"
+                                aria-hidden="true"
+                            >
+                                01
+                            </span>
+
+                            <h3>Make it personal</h3>
+
+                            <p>
+                                Set your experience, preferred language
+                                and learning goal.
+                            </p>
+                        </li>
+
+                        <li>
+                            <span
+                                class="hc-step-number"
+                                aria-hidden="true"
+                            >
+                                02
+                            </span>
+
+                            <h3>Find your level</h3>
+
+                            <p>
+                                Complete placement to identify
+                                your starting point.
+                            </p>
+                        </li>
+
+                        <li>
+                            <span
+                                class="hc-step-number"
+                                aria-hidden="true"
+                            >
+                                03
+                            </span>
+
+                            <h3>Build your skills</h3>
+
+                            <p>
+                                Work through lessons, practical tasks
+                                and level assessments.
+                            </p>
+                        </li>
+
+                        <li>
+                            <span
+                                class="hc-step-number"
+                                aria-hidden="true"
+                            >
+                                04
+                            </span>
+
+                            <h3>Create your project</h3>
+
+                            <p>
+                                Bring your skills together in a final
+                                project and complete its evaluation.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <a
+                        href="pages/auth/signup.html"
+                        class="button hc-light-button"
+                    >
+                        Start your learning journey
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            
+            <section
+                class="hc-section hc-blue"
+                id="modules"
+                aria-labelledby="hc-languages-title"
+            >
+                <div class="container">
+                    <div class="hc-section-label">
+                        <span>03</span>
+                        LANGUAGE PATHS
+                    </div>
+
+                    <div class="hc-heading-layout">
+                        <h2 id="hc-languages-title">
+                            Different languages.<br>
+                            <span>One place to grow.</span>
+                        </h2>
+
+                        <p class="hc-intro">
+                            Explore a growing catalogue of programming languages.
+                            Python is the first path in the current demo. Other full paths are coming soon.
+                        </p>
+                    </div>
+
+                    <div class="hc-languages">
+                        <article class="hc-language hc-language-current">
+                            <div class="hc-language-top">
+                                <span
+                                    class="hc-language-mark"
+                                    aria-hidden="true"
+                                >
+                                    Py
+                                </span>
+
+                                <span class="hc-status">
+                                    CURRENT DEMO
+                                </span>
+                            </div>
+
+                            <h3>Python</h3>
+
+                            <p>
+                                Start with the fundamentals and work
+                                towards building a useful console program.
+                            </p>
+
+                            <a href="pages/auth/signup.html" class="hc-link">
+                                Explore the Python path
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </article>
+
+                        <article class="hc-language">
+                            <div class="hc-language-top">
+                                <span
+                                    class="hc-language-mark"
+                                    aria-hidden="true"
+                                >
+                                    C#
+                                </span>
+
+                                <span class="hc-status">
+                                    PLANNED PATH
+                                </span>
+                            </div>
+
+                            <h3>C#</h3>
+
+                            <p>
+                                A future path for structured programming
+                                and object-oriented concepts.
+                            </p>
+
+                            <p class="hc-language-note">
+                                Not available in this demo yet.
+                            </p>
+                        </article>
+
+                        <article class="hc-language">
+                            <div class="hc-language-top">
+                                <span
+                                    class="hc-language-mark"
+                                    aria-hidden="true"
+                                >
+                                    C++
+                                </span>
+
+                                <span class="hc-status">
+                                    PLANNED PATH
+                                </span>
+                            </div>
+
+                            <h3>C++</h3>
+
+                            <p>
+                                A future path for programming fundamentals
+                                and problem-solving.
+                            </p>
+
+                            <p class="hc-language-note">
+                                Not available in this demo yet.
+                            </p>
+                        </article>
+                    </div>
+
+                    <p><a class="button button-outline" href="pages/public/languages.html">Browse all programming languages</a></p>
+                    <div class="hc-path-summary">
+                        <strong>Your Python journey</strong>
+
+                        <p>
+                            Foundations
+                            <span aria-hidden="true">→</span>
+                            Logic & loops
+                            <span aria-hidden="true">→</span>
+                            Functions & collections
+                            <span aria-hidden="true">→</span>
+                            Final project
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section
+                class="hc-section"
+                aria-labelledby="hc-mentor-title"
+            >
+                <div class="container">
+                    <div class="hc-section-label">
+                        <span>04</span>
+                        MENTOR IN ACTION
+                    </div>
+
+                    <div class="hc-mentor-layout">
+                        <div>
+                            <h2 id="hc-mentor-title">
+                                Don’t just fix it.<br>
+                                <span>Understand it.</span>
+                            </h2>
+
+                            <p class="hc-intro">
+                                A useful hint gives you something
+                                to think about.
+                                Try this prepared example.
+                            </p>
+
+                            <a href="pages/student/mentor.html" class="hc-link">
+                                Open AI Mentor
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+
+                        <div class="hc-example">
+                            <div class="hc-example-header">
+                                <span>first_steps.py</span>
+                                <span>PYTHON</span>
+                            </div>
+
+                            <pre><code>for number in range(1, 5):
+    print(number)</code></pre>
+
+                            <div class="hc-example-question">
+                                <span class="hc-caption">
+                                    YOUR QUESTION
+                                </span>
+
+                                <p>
+                                    Why does my loop stop before printing 5?
+                                </p>
+                            </div>
+
+                            <details class="hc-hint">
+                                <summary>
+                                    Reveal the mentor hint
+                                </summary>
+
+                                <p>
+                                    The stop value in range() is excluded.
+                                    What stop value would include 5?
+                                </p>
+                            </details>
+
+                            <p class="hc-example-note">
+                                Prepared example · Live AI is not connected yet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="hc-section home-services" id="student-services" aria-labelledby="student-services-title">
+                <div class="container">
+                    <p class="eyebrow">GROW WITH YOUR COMMUNITY</p>
+                    <h2 id="student-services-title">More ways to learn and build.</h2>
+                    <p class="hc-intro">Connect ideas, explore peer guidance and discover what fellow learners can create.</p>
+                    <div class="services-grid">
+                        <article class="services-card"><div class="service-card-top"><p class="eyebrow"><span class="service-number">01</span><span>/ TOGETHER</span></p><span class="service-cherries" aria-hidden="true"><i></i><i></i></span></div><h3>Student Community</h3><p>Exchange knowledge, support fellow learners and share achievements. The Discord link has not been added yet.</p><a class="button button-outline" href="pages/services/community.html"><span>Explore the community</span><span class="service-arrow" aria-hidden="true">↗</span></a></article>
+                        <article class="services-card"><div class="service-card-top"><p class="eyebrow"><span class="service-number">02</span><span>/ GUIDANCE</span></p><span class="service-cherries" aria-hidden="true"><i></i><i></i></span></div><h3>Peer Mentoring</h3><p>Explore paid sessions from demo admin-approved student mentors. Booking is a local simulation.</p><a class="button button-outline" href="pages/services/peer-mentoring.html"><span>Explore peer sessions</span><span class="service-arrow" aria-hidden="true">↗</span></a></article>
+                        <article class="services-card"><div class="service-card-top"><p class="eyebrow"><span class="service-number">03</span><span>/ DISCOVER</span></p><span class="service-cherries" aria-hidden="true"><i></i><i></i></span></div><h3>Student Showcase</h3><p>Discover public student demo profiles, programming skills and project ideas across our language paths.</p><a class="button button-outline" href="pages/services/showcase.html"><span>Explore student work</span><span class="service-arrow" aria-hidden="true">↗</span></a></article>
+                        <article class="services-card"><div class="service-card-top"><p class="eyebrow"><span class="service-number">04</span><span>/ CREATE</span></p><span class="service-cherries" aria-hidden="true"><i></i><i></i></span></div><h3>Student Freelance Services</h3><p>Browse programming services offered by students, try a local request or prepare your own private service draft.</p><a class="button button-outline" href="pages/services/freelance-services.html"><span>Explore student services</span><span class="service-arrow" aria-hidden="true">↗</span></a></article>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section
+                class="hc-section hc-blue"
+                id="faq"
+                aria-labelledby="hc-faq-title"
+            >
+                <div class="container hc-faq-layout">
+                    <div>
+                        <div class="hc-section-label">
+                            <span>05</span>
+                            BEFORE YOU BEGIN
+                        </div>
+
+                        <h2 id="hc-faq-title">
+                            Good questions.<br>
+                            <span>Clear answers.</span>
+                        </h2>
+                    </div>
+
+                    <div class="hc-faq-list">
+                        <details>
+                            <summary>
+                                Can I start without coding experience?
+                            </summary>
+
+                            <p>
+                                Yes. The Python path begins with foundations.
+                                Placement helps identify what to practise.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                How do I unlock the next level?
+                            </summary>
+
+                            <p>
+                                Complete the required lessons and tasks,
+                                then score at least 70% in the level assessment.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                Does mentor feedback determine my result?
+                            </summary>
+
+                            <p>
+                                Required tests determine task completion.
+                                Mentor feedback supports learning
+                                and improvement.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                When do I receive a certificate?
+                            </summary>
+
+                            <p>
+                                After completing the required learning,
+                                assessments and final project evaluation.
+                                Certificate issuance is not connected
+                                in the current frontend demo.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section
+                class="hc-closing"
+                aria-labelledby="hc-closing-title"
+            >
+                <div class="container">
+                    <p class="hc-caption">
+                        YOUR NEXT CHAPTER STARTS HERE
+                    </p>
+
+                    <h2 id="hc-closing-title">
+                        Your first line.<br>
+                        Your next possibility.
+                    </h2>
+
+                    <a
+                        href="pages/auth/signup.html"
+                        class="button hc-light-button"
+                    >
+                        Start learning
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+            <a class="logo brand-logo" href="index.html">
+                <img
+                    src="assets/images/Burgundy CMA cherry monogram logo.png"
+                    alt="CodeMentor AI cherry logo"
+                    width="64"
+                    height="64"
+                >
+
+                <span>
+                    CodeMentor <span class="brand-ai">AI</span>
+                </span>
+            </a>
+                <p>A clearer way to learn programming.<br>One step, one line at a time.</p>
+            </div>
+
+            <nav class="footer-explore" aria-labelledby="footer-explore-title">
+                <h2 id="footer-explore-title">Explore</h2>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#modules">Languages</a></li>
+                    <li><a href="#student-services">Student services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="pages/auth/login.html">Sign in</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-contact" aria-labelledby="footer-contact-title">
+                <h2 id="footer-contact-title">Get in touch</h2>
+                <address>
+                    <a href="https://www.linkedin.com/in/lujain-okour-06903b313/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">
+                        <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v7M11 17v-7m0 3c0-4 6-4 6 0v4"/><circle cx="7.5" cy="7" r=".6" fill="currentColor"/></svg>
+                        <span>LinkedIn</span>
+                        <span class="footer-sr-only"> (opens in a new tab)</span>
+                    </a>
+                    <a href="https://github.com/lujainokour" target="_blank" rel="noopener noreferrer">
+                        <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21v-3c-4 1-4-2-5-2m11 5v-4c0-1-.4-1.6-1-2 3-.3 6-1.4 6-6a5 5 0 0 0-1.3-3.4c.1-.8.1-1.8-.4-2.8-1.8-.1-3.1.9-3.7 1.3a12 12 0 0 0-5.2 0C8.8 3.7 7.5 2.7 5.7 2.8c-.5 1-.5 2-.4 2.8A5 5 0 0 0 4 9c0 4.6 3 5.7 6 6-.6.4-1 1-1 2"/></svg>
+                        <span>GitHub</span>
+                        <span class="footer-sr-only"> (opens in a new tab)</span>
+                    </a>
+                    <a href="tel:+962779994475">
+                        <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8 3 3 5-3 2c1.5 3 3 4.5 6 6l2-3 5 3-1 4c-1 3-8-1-12-5S0 4 3 3Z"/></svg>
+                        <span class="footer-contact-text"><span class="footer-contact-label">Phone</span><span dir="ltr">0779994475</span></span>
+                    </a>
+                </address>
+            </section>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> CodeMentor AI</p>
+                <a href="#main">Back to top <span aria-hidden="true">&uarr;</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+

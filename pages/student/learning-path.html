@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Path | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/learning-path.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#learning-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html" aria-current="page">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / Learning path</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="learning-main">
+            <p class="eyebrow">YOUR PERSONAL LEARNING ROADMAP</p>
+            <h1>One step at a time. A clear path ahead.</h1>
+
+            <p class="workspace-intro">
+                Start with foundations, strengthen your logic
+                and build toward a project of your own.
+            </p>
+
+            <p
+                id="workspace-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="roadmap-layout">
+                <section aria-labelledby="track-title">
+                    <div class="roadmap-track">
+                        <div>
+                            <p class="eyebrow">YOUR TRACK</p>
+                            <h2 id="track-title">Python · 4 levels</h2>
+                        </div>
+
+                        <span class="track-badge">Python available now</span>
+                    </div>
+
+                    <div class="roadmap-list" id="roadmap-list">
+                        <article class="roadmap-card">
+                            <span class="roadmap-number" aria-hidden="true">01</span>
+
+                            <div class="roadmap-content">
+                                <p class="eyebrow">LEVEL 01 · READY TO START</p>
+                                <h2>Python Foundations</h2>
+                                <p>
+                                    Variables, data types, input and output.
+                                </p>
+
+                                <a href="../../pages/student/module.html?level=1"
+                                   class="button button-primary">
+                                    Start level →
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-card roadmap-locked">
+                            <span class="roadmap-number" aria-hidden="true">02</span>
+
+                            <div class="roadmap-content">
+                                <p class="eyebrow">LEVEL 02 · LOCKED</p>
+                                <h2>Logic and Control Flow</h2>
+                                <p>
+                                    Conditions, loops and decision-making.
+                                </p>
+
+                                <button type="button"
+                                        class="button button-outline"
+                                        data-locked-level="2">
+                                    View unlock requirements
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-card roadmap-locked">
+                            <span class="roadmap-number" aria-hidden="true">03</span>
+
+                            <div class="roadmap-content">
+                                <p class="eyebrow">LEVEL 03 · LOCKED</p>
+                                <h2>Functions and Collections</h2>
+                                <p>
+                                    Functions, lists and dictionaries.
+                                </p>
+
+                                <button type="button"
+                                        class="button button-outline"
+                                        data-locked-level="3">
+                                    View unlock requirements
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-card roadmap-locked">
+                            <span class="roadmap-number" aria-hidden="true">04</span>
+
+                            <div class="roadmap-content">
+                                <p class="eyebrow">LEVEL 04 · LOCKED</p>
+                                <h2>Your Final Project</h2>
+                                <p>
+                                    Build a Python console-based Study Task Manager.
+                                </p>
+
+                                <button type="button"
+                                        class="button button-outline"
+                                        data-locked-level="4">
+                                    View unlock requirements
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <aside class="roadmap-aside">
+                    <section class="dashboard-card">
+                        <h2>How levels unlock.</h2>
+
+                        <p>
+                            For each learning level, complete:
+                        </p>
+
+                        <ul class="roadmap-requirements">
+                            <li>All required lessons</li>
+                            <li>All required task tests</li>
+                            <li>The level assessment with at least 70%</li>
+                        </ul>
+
+                        <p class="dashboard-footnote">
+                            The final project becomes available after Level 03.
+                        </p>
+                    </section>
+
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Support along the way.</h2>
+
+                        <p>
+                            Discuss a concept or your approach
+                            when you need a little guidance.
+                        </p>
+
+                        <a href="../../pages/student/mentor.html" class="button button-outline">
+                            Open AI Mentor
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Keep track of your growth.</h2>
+
+                        <p>
+                            Review your completed activities
+                            and what remains in your current level.
+                        </p>
+
+                        <a href="../../pages/student/progress.html" class="button button-outline">
+                            View my progress
+                        </a>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Starting learning state
+            </footer>
+        </main>
+    </div>
+
+    <dialog
+        id="unlock-dialog"
+        class="confirmation-dialog"
+        aria-labelledby="unlock-title"
+        aria-describedby="unlock-description"
+    >
+        <h2 id="unlock-title">Level locked</h2>
+        <p id="unlock-description"></p>
+
+        <div class="dialog-actions">
+            <button type="button"
+                    class="button button-outline"
+                    id="close-unlock"
+                    autofocus>
+                Close
+            </button>
+
+            <a href="../../pages/student/module.html?level=1"
+               class="button button-primary"
+               id="current-level-link">
+                Open Level 01
+            </a>
+        </div>
+    </dialog>
+</body>
+</html>
+
+

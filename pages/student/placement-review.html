@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Answers | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/placement-data.js" defer></script>
+    <script src="../../js/placement-review.js" defer></script>
+</head>
+<body class="onboarding-page">
+    <header class="container onboarding-header">
+    <script src="../../js/theme.js"></script>
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+
+        <a href="../../pages/student/placement-intro.html" class="button button-outline">
+            Save and exit
+        </a>
+    </header>
+
+    <main class="container onboarding-layout">
+        <aside class="onboarding-sidebar">
+            <p class="eyebrow">ONE LAST LOOK</p>
+            <h1>Your answers.<br>Your starting point.</h1>
+
+            <p class="onboarding-description">
+                Review your choices before submitting.
+                You can still change any answer.
+            </p>
+
+            <div class="journey-card">
+                <p class="eyebrow">YOUR ANSWERS</p>
+
+                <ul class="review-summary">
+                    <li>
+                        <strong id="selected-count">0</strong>
+                        <span>answers selected</span>
+                    </li>
+
+                    <li>
+                        <strong id="unsure-count">0</strong>
+                        <span>marked “I’m not sure”</span>
+                    </li>
+
+                    <li>
+                        <strong id="unanswered-count">0</strong>
+                        <span>unanswered</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="onboarding-note">
+                <h2>Honest answers help.</h2>
+                <p>
+                    This assessment provides an initial snapshot
+                    of your understanding.
+                </p>
+            </div>
+        </aside>
+
+        <section class="preferences-panel" aria-labelledby="review-title">
+            <p class="eyebrow">STEP 2 OF 3 · REVIEW YOUR ASSESSMENT</p>
+
+            <h2 id="review-title">Ready for your next step?</h2>
+
+            <p class="auth-intro">
+                Check each answer below. Correct answers appear only
+                after you submit.
+            </p>
+
+            <div id="review-list" class="review-list"></div>
+
+            <p
+                id="review-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="preferences-actions">
+                <a href="../../pages/student/placement-question.html"
+                   class="button button-outline">
+                    Back to questions
+                </a>
+
+                <button
+                    type="button"
+                    class="button button-primary"
+                    id="open-submit"
+                    disabled
+                >
+                    Submit assessment
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="submit-dialog" class="confirmation-dialog"
+            aria-labelledby="dialog-title"
+            aria-describedby="dialog-description">
+
+        <h2 id="dialog-title">Submit your assessment?</h2>
+
+        <p id="dialog-description">
+            You cannot change this attempt after submitting.
+            Your results will show your score and a breakdown by topic.
+        </p>
+
+        <p id="submit-error" class="field-error" role="alert"></p>
+
+        <div class="dialog-actions">
+            <button type="button"
+                    class="button button-outline"
+                    id="cancel-submit"
+                    autofocus>
+                Keep reviewing
+            </button>
+
+            <button type="button"
+                    class="button button-primary"
+                    id="confirm-submit">
+                Submit
+            </button>
+        </div>
+    </dialog>
+
+    <footer class="container onboarding-footer">
+        CodeMentor AI · Frontend demo · Review your placement answers
+    </footer>
+</body>
+</html>
+

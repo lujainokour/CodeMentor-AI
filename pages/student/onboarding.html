@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Preferences | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/onboarding.js" defer></script>
+</head>
+<body class="onboarding-page">
+    <header class="onboarding-header container">
+    <script src="../../js/theme.js"></script>
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+
+        <button
+            type="button"
+            class="button button-outline"
+            id="save-exit"
+        >
+            Save and exit
+        </button>
+    </header>
+
+    <main class="container onboarding-layout">
+        <aside class="onboarding-sidebar">
+            <p class="eyebrow">A PATH BUILT AROUND YOU</p>
+            <h1>Your goals.<br>Your starting point.</h1>
+
+            <p class="onboarding-description">
+                Tell us a little about your learning.
+                We’ll help you find your next step.
+            </p>
+
+            <div class="journey-card">
+                <p class="eyebrow">YOUR JOURNEY</p>
+
+                <ol class="journey-steps">
+                    <li class="is-current" aria-current="step">
+                        <span class="journey-number">1</span>
+                        <span>Set your preferences</span>
+                    </li>
+
+                    <li>
+                        <span class="journey-number">2</span>
+                        <span>Find your level</span>
+                    </li>
+
+                    <li>
+                        <span class="journey-number">3</span>
+                        <span>Start your learning path</span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="onboarding-note">
+                <h2>Start where you are.</h2>
+                <p>
+                    You do not need to know everything.
+                    Your answers help us understand your starting point.
+                </p>
+            </div>
+        </aside>
+
+        <section class="preferences-panel" aria-labelledby="preferences-title">
+            <p class="eyebrow">STEP 1 OF 3 · YOUR PREFERENCES</p>
+            <h2 id="preferences-title">Make this journey yours.</h2>
+
+            <p class="auth-intro" id="welcome-message">
+                Choose one option in each group to shape your learning path.
+            </p>
+
+            <form id="onboarding-form">
+                <fieldset class="preference-group"><legend>01 · Choose your language</legend><p class="preference-help">Python has a frontend demo. Other full learning paths and assessments are coming soon. Locally authored lessons can be browsed separately.</p><label for="onboarding-language">Programming language</label><select id="onboarding-language" name="language" required></select></fieldset>
+
+                <fieldset class="preference-group"><legend>02 · Your programming experience</legend><div class="choice-grid"><label class="choice-card"><input type="radio" name="experience" value="beginner" required><span class="choice-content"><strong>Just starting</strong></span></label><label class="choice-card"><input type="radio" name="experience" value="basics" required><span class="choice-content"><strong>Know the basics</strong></span></label><label class="choice-card"><input type="radio" name="experience" value="practising" required><span class="choice-content"><strong>Have some practice</strong></span></label></div></fieldset>
+
+                <fieldset class="preference-group"><legend>03 · Your learning goal</legend><div class="choice-grid"><label class="choice-card"><input type="radio" name="goal" value="foundations" required><span class="choice-content"><strong>Build foundations</strong></span></label><label class="choice-card"><input type="radio" name="goal" value="problem-solving" required><span class="choice-content"><strong>Solve problems</strong></span></label><label class="choice-card"><input type="radio" name="goal" value="projects" required><span class="choice-content"><strong>Build projects</strong></span></label></div></fieldset>
+
+                <p
+                    class="form-message"
+                    id="onboarding-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+                <div class="preferences-actions">
+                    <span>Next: available content for your selected language</span>
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                        id="continue-button"
+                    >
+                        Continue →
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container onboarding-footer">
+        CodeMentor AI · Frontend demo · Preferences saved in this tab
+    </footer>
+</body>
+</html>
+
+
+

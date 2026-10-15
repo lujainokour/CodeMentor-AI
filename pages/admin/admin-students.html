@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+<script src="../../js/admin-workspace.js" defer></script>
+<script src="../../js/admin-student-data.js" defer></script>
+<script src="../../js/admin-students.js" defer></script>
+</head>
+
+<body class="workspace-page admin-page">
+    <a href="#students-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html" aria-current="page">
+                Students
+            </a>
+            <a href="../../pages/admin/admin-courses.html">Learning paths</a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">View website</a>
+            <button type="button" id="admin-exit-button">
+                Exit admin preview
+            </button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Students</span>
+            </div>
+
+            <span class="admin-preview-label">Admin preview</span>
+        </header>
+
+        <main class="workspace-main" id="students-main">
+            <p class="eyebrow">STUDENT MANAGEMENT</p>
+            <h1>Your students, in one place.</h1>
+
+            <p class="workspace-intro">
+                Find a student and review their account
+                and learning progress.
+            </p>
+
+            <p class="mentor-demo-notice">
+                Sample data only. These records do not represent
+                real student accounts or live activity.
+            </p>
+
+            <section
+                class="dashboard-card"
+                aria-labelledby="student-directory-title"
+            >
+                <h2 id="student-directory-title">Student directory</h2>
+
+                <form id="student-filter-form" class="student-filters">
+                    <div class="form-field">
+                        <label for="student-search">
+                            Search by name or email
+                        </label>
+
+                        <input
+                            type="search"
+                            id="student-search"
+                            placeholder="Search students..."
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="student-status-filter">
+                            Account status
+                        </label>
+
+                        <select id="student-status-filter">
+                            <option value="all">All accounts</option>
+                            <option value="enabled">Enabled</option>
+                            <option value="suspended">Suspended</option>
+                        </select>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="student-clear-filters"
+                        class="button button-outline"
+                    >
+                        Clear filters
+                    </button>
+                </form>
+
+                <p class="dashboard-footnote">
+                    Account status controls access.
+                    Last activity describes when a student last used
+                    the platform.
+                </p>
+
+                <p
+                    id="student-results-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+                <div class="student-table-scroll">
+                    <table class="student-table">
+                        <caption class="admin-visually-hidden">
+                            Sample student accounts and learning progress
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Student</th>
+                                <th scope="col">Learning path</th>
+                                <th scope="col">Current level</th>
+                                <th scope="col">Account status</th>
+                                <th scope="col">Last activity</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="student-table-body"></tbody>
+                    </table>
+                </div>
+
+                <div
+                    id="student-empty-state"
+                    class="review-empty-state"
+                    hidden
+                >
+                    <h3>No matching students.</h3>
+                    <p>
+                        Try another name or email,
+                        or clear your filters.
+                    </p>
+                </div>
+
+                <noscript>
+                    <p class="form-message is-error">
+                        Enable JavaScript to view the sample directory.
+                    </p>
+                </noscript>
+            </section>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Student directory
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

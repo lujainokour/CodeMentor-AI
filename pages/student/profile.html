@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Settings | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/profile.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a href="#profile-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html" aria-current="page">
+                Profile settings
+            </a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / Profile settings</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="profile-main">
+            <p class="eyebrow">YOUR ACCOUNT</p>
+            <h1>Make your profile yours.</h1>
+
+            <p class="workspace-intro">
+                Update your display name and learning preferences.
+            </p>
+
+            <p
+                id="workspace-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="module-layout">
+                <section class="dashboard-card">
+                    <h2>Profile details</h2>
+
+                    <form id="profile-form" novalidate>
+                        <fieldset
+                            id="profile-fields"
+                            class="profile-fields"
+                            disabled
+                        >
+                            <div class="form-field">
+                                <label for="profile-name">Full name</label>
+
+                                <input
+                                    type="text"
+                                    id="profile-name"
+                                    autocomplete="name"
+                                    maxlength="80"
+                                    required
+                                    aria-describedby="profile-name-error"
+                                >
+
+                                <p
+                                    id="profile-name-error"
+                                    class="field-error"
+                                ></p>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="profile-email">
+                                    Email address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="profile-email"
+                                    autocomplete="email"
+                                    readonly
+                                    aria-describedby="profile-email-help"
+                                >
+
+                                <p
+                                    id="profile-email-help"
+                                    class="field-help"
+                                >
+                                    Email changes require account verification
+                                    and are not available in this demo.
+                                </p>
+                            </div>
+
+                            <h3 class="lesson-small-heading">
+                                Learning preferences
+                            </h3>
+
+                            <div class="form-field">
+                                <label for="profile-language">
+                                    Learning language
+                                </label>
+
+                                <select id="profile-language"><option value="">Loading language catalogue</option></select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="profile-experience">
+                                    Your experience
+                                </label>
+
+                                <select id="profile-experience">
+                                    <option value="beginner">
+                                        I am starting from scratch
+                                    </option>
+                                    <option value="basics">
+                                        I know some basics
+                                    </option>
+                                    <option value="practising">
+                                        I am practising my skills
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="profile-goal">
+                                    Your learning goal
+                                </label>
+
+                                <select id="profile-goal">
+                                    <option value="foundations">
+                                        Build strong foundations
+                                    </option>
+                                    <option value="problem-solving">
+                                        Improve problem-solving skills
+                                    </option>
+                                    <option value="projects">
+                                        Build practical projects
+                                    </option>
+                                </select>
+                            </div>
+
+                            <p class="dashboard-footnote">
+                                Updating preferences does not reset
+                                your placement results or learning progress.
+                            </p>
+
+                            <div class="profile-form-actions">
+                                <button
+                                    type="button"
+                                    id="profile-cancel"
+                                    class="button button-outline"
+                                >
+                                    Cancel changes
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="button button-primary"
+                                >
+                                    Save changes
+                                </button>
+                            </div>
+                        </fieldset>
+
+                        <p
+                            id="profile-message"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </form>
+                </section>
+
+                <aside class="module-aside">
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Account security</h2>
+
+                        <p>
+                            Manage your password from the
+                            password settings page.
+                        </p>
+
+                        <a
+                            href="../../pages/auth/change-password.html"
+                            class="button button-outline"
+                        >
+                            Change password
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>My local portfolio</h2>
+                        <p>View projects you explicitly include for this demo account. Self-reported work is private to this browser tab and is not added to fictional public profiles.</p>
+                        <a href="../../pages/student/local-portfolio.html" class="dashboard-text-link">Open my local portfolio →</a>
+                        <h2>About this demo</h2>
+
+                        <p>
+                            Profile changes are saved in this browser tab.
+                            They are not sent to a server.
+                        </p>
+
+                        <p class="dashboard-footnote">
+                            Closing the tab may clear your demo session.
+                        </p>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Keep learning.</h2>
+
+                        <p>
+                            Return to your learning path
+                            and continue your next activity.
+                        </p>
+
+                        <a
+                            href="../../pages/student/learning-path.html"
+                            class="dashboard-text-link"
+                        >
+                            Open learning path →
+                        </a>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Profile settings
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

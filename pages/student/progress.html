@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Progress | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/progress.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#progress-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html" aria-current="page">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / My progress</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="progress-main">
+            <p class="eyebrow">SMALL STEPS. VISIBLE PROGRESS.</p>
+            <h1>See how far you’ve come.</h1>
+
+            <p class="workspace-intro">
+                Review completed activities and what remains
+                in Python Foundations.
+            </p>
+
+            <p id="workspace-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <section class="dashboard-card" aria-labelledby="export-report-title">
+                <h2 id="export-report-title">Export Learning Report</h2>
+                <p>Review available demo records, then use your browser's Print / Save as PDF window. This report is not an official certificate.</p>
+                <a class="button button-outline" href="../../pages/student/learning-report.html">Preview learning report</a>
+            </section>
+
+            <div class="dashboard-stats">
+                <article class="dashboard-stat">
+                    <p>LESSONS COMPLETED · LEVEL 01</p>
+                    <h2 id="completed-lessons">—</h2>
+                </article>
+
+                <article class="dashboard-stat">
+                    <p>TASKS PASSED · LEVEL 01</p>
+                    <h2 id="completed-tasks">—</h2>
+                </article>
+
+                <article class="dashboard-stat">
+                    <p>LEVEL 01 STATUS</p>
+                    <h2 id="level-status">—</h2>
+                </article>
+            </div>
+
+            <div class="dashboard-grid">
+                <div>
+                    <section class="dashboard-card">
+                        <h2>Python Foundations</h2>
+
+                        <p>
+                            Complete all three requirements to unlock Level 02.
+                        </p>
+
+                        <div class="progress-requirement">
+                            <div>
+                                <strong>Required lessons</strong>
+                                <span id="lesson-count">—</span>
+                            </div>
+
+                            <progress id="lesson-bar" value="0" max="4"
+                                      aria-label="Required lessons completed"></progress>
+                        </div>
+
+                        <div class="progress-requirement">
+                            <div>
+                                <strong>Required tasks</strong>
+                                <span id="task-count">—</span>
+                            </div>
+
+                            <progress id="task-bar" value="0" max="2"
+                                      aria-label="Required tasks passed"></progress>
+                        </div>
+
+                        <div class="progress-assessment">
+                            <strong>Level assessment</strong>
+                            <p id="assessment-status">—</p>
+                        </div>
+
+                        <a href="../../pages/student/module.html?level=1"
+                           class="button button-outline">
+                            Open current level
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card module-section">
+                        <h2>Your completed activities</h2>
+                        <ul id="completed-activities" class="completed-activities"></ul>
+                    </section>
+                </div>
+
+                <aside class="module-aside">
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Your next step</h2>
+                        <p id="next-step-description">Loading progress…</p>
+
+                        <a href="../../pages/student/module.html?level=1"
+                           class="button button-outline"
+                           id="next-step-link">
+                            Open current level
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Progress and understanding</h2>
+
+                        <p>
+                            Completed lessons show the content you reviewed.
+                            Task tests and assessments check your application
+                            of those concepts.
+                        </p>
+
+                        <a href="../../pages/student/skill-analysis.html"
+                           class="button button-outline">
+                            Explore skill analysis
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>About this demo</h2>
+
+                        <p>
+                            Lesson completion is saved in this browser tab.
+                            Python task evaluation is not connected yet.
+                        </p>
+
+                        <p class="dashboard-footnote">
+                            Saving code does not mark a task complete.
+                            Browser progress is not a server-verified record.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Saved learning progress
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a href="#certificates-main" class="skip-link">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html" aria-current="page">
+                Certificates
+            </a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / Certificates</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="certificates-main">
+            <p class="eyebrow">YOUR ACHIEVEMENTS</p>
+            <h1>Your learning, recognized.</h1>
+
+            <p class="workspace-intro">
+                Complete the Python learning path and pass your final
+                project evaluation to earn a certificate.
+            </p>
+
+            <p
+                id="workspace-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="module-layout">
+                <section
+                    class="dashboard-card certificate-panel"
+                    aria-labelledby="certificate-title"
+                >
+                    <div class="certificate-panel-heading">
+                        <p class="eyebrow">PYTHON LEARNING PATH</p>
+                        <span class="certificate-status">
+                            Not issued
+                        </span>
+                    </div>
+
+                    <div class="certificate-empty-state">
+                        <span class="certificate-symbol" aria-hidden="true">
+                            ☆
+                        </span>
+
+                        <h2 id="certificate-title">
+                            Your certificate is ahead.
+                        </h2>
+
+                        <p>
+                            No certificate has been issued yet.
+                            Keep building your skills and complete
+                            the required learning activities.
+                        </p>
+
+                        <a
+                            href="../../pages/student/learning-path.html"
+                            class="button button-primary"
+                        >
+                            Continue learning
+                        </a>
+                    </div>
+
+                    <div
+                        class="certificate-actions"
+                        aria-describedby="certificate-actions-help"
+                    >
+                        <button
+                            type="button"
+                            class="button button-outline"
+                            disabled
+                        >
+                            Download PDF
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-outline"
+                            disabled
+                        >
+                            Share on LinkedIn
+                        </button>
+                    </div>
+
+                    <p
+                        id="certificate-actions-help"
+                        class="dashboard-footnote"
+                    >
+                        Download and sharing become available
+                        after a verified certificate is issued.
+                    </p>
+                </section>
+
+                <aside class="module-aside">
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>What you need to complete.</h2>
+
+                        <ol class="roadmap-requirements">
+                            <li>
+                                Complete the required lessons
+                                in Levels 01–03.
+                            </li>
+
+                            <li>
+                                Pass the required practice task tests
+                                in each level.
+                            </li>
+
+                            <li>
+                                Score at least 70% on each required
+                                level assessment.
+                            </li>
+
+                            <li>
+                                Submit the Level 04 final project
+                                and pass its evaluation.
+                            </li>
+                        </ol>
+
+                        <a
+                            href="../../pages/student/progress.html"
+                            class="dashboard-text-link"
+                        >
+                            View my progress →
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Your final step.</h2>
+
+                        <p>
+                            Build a study task manager that brings
+                            your Python skills together.
+                        </p>
+
+                        <a
+                            href="../../pages/student/project.html"
+                            class="button button-outline"
+                        >
+                            View final project
+                        </a>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Certificate verification</h2>
+
+                        <p>
+                            An issued certificate will include your name,
+                            the completed learning path, an issue date
+                            and a verification reference.
+                        </p>
+
+                        <p class="dashboard-footnote">
+                            Certificate issuance and verification
+                            are not connected in this frontend demo.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Certificates
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practice Tasks | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+    <script src="../../js/learning-context.js" defer></script>
+    <script src="../../js/student-workspace.js" defer></script>
+    <script src="../../js/practice.js" defer></script>
+</head>
+<body class="workspace-page">
+    <a href="#practice-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">STUDENT WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Student navigation">
+            <a href="../../pages/student/dashboard.html">Dashboard</a>
+            <a href="../../pages/student/learning-path.html">Learning path</a>
+            <a href="../../pages/student/practice.html" aria-current="page">Practice tasks</a>
+            <a href="../../pages/student/mentor.html">AI Mentor</a>
+            <a href="../../pages/student/progress.html">My progress</a>
+            <a href="../../pages/student/project.html">Projects</a>
+            <a href="../../pages/student/certificates.html">Certificates</a>
+            <a href="../../pages/student/workspace.html">Coding workspace</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../pages/student/profile.html">Profile settings</a>
+            <button type="button" id="logout-button">Log out</button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Student workspace / Practice tasks</span>
+            </div>
+
+            <a href="../../pages/student/profile.html" class="account-pill">
+                <span class="account-initials" id="account-initials">S</span>
+                <span id="account-name">Student</span>
+            </a>
+        </header>
+
+        <main class="workspace-main" id="practice-main">
+            <p class="eyebrow">LEARN BY DOING</p>
+            <h1>Make room for a little practice.</h1>
+
+            <p class="workspace-intro">
+                Apply the concepts from Python Foundations
+                in your required coding tasks.
+            </p>
+
+            <p id="workspace-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <form class="practice-filters" id="practice-filters"
+                  role="search" aria-label="Filter practice tasks">
+                <div class="practice-filter">
+                    <label for="task-search">Search tasks</label>
+
+                    <input
+                        type="search"
+                        id="task-search"
+                        placeholder="Search by task name"
+                        maxlength="100"
+                    >
+                </div>
+
+                <div class="practice-filter">
+                    <label for="topic-filter">Topic</label>
+
+                    <select id="topic-filter">
+                        <option value="all">All topics</option>
+                        <option value="variables">Variables and output</option>
+                        <option value="numbers">Input and arithmetic</option>
+                    </select>
+                </div>
+
+                <div class="practice-filter">
+                    <label for="status-filter">Status</label>
+
+                    <select id="status-filter">
+                        <option value="all">All statuses</option>
+                        <option value="not-started">Not started</option>
+                        <option value="draft">Draft saved</option>
+                        <option value="passed">Passed</option>
+                    </select>
+                </div>
+
+                <button type="button"
+                        class="button button-outline"
+                        id="reset-filters">
+                    Reset filters
+                </button>
+            </form>
+
+            <p class="practice-count" id="task-count"
+               role="status" aria-live="polite"></p>
+
+            <div class="practice-grid" id="practice-list"></div>
+
+            <section class="dashboard-card" id="practice-empty" hidden>
+                <h2>No tasks match your filters.</h2>
+                <p>Try another search or reset the filters.</p>
+
+                <button type="button"
+                        class="button button-outline"
+                        id="empty-reset">
+                    Reset filters
+                </button>
+            </section>
+
+            <div class="mentor-demo-notice practice-notice">
+                Saving code creates a draft. It does not mark a task passed.
+                Python execution and tests are waiting for the backend connection.
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Level 01 practice
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Level | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/course-content-store.js" defer></script><script src="../../js/admin-level-create.js" defer></script>
+</head>
+
+<body class="workspace-page">
+    <a href="#level-create-main" class="skip-link">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-account-access.html">Account access</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="location">
+                Courses
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">Exit admin demo</a>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Add level</span>
+            </div>
+
+            <span class="account-pill">Admin demo</span>
+        </header>
+
+        <main class="workspace-main" id="level-create-main">
+            <a
+                href="../../pages/admin/admin-courses.html"
+                class="module-back"
+                id="level-back-link"
+            >
+                ← Back to courses
+            </a>
+
+            <p class="eyebrow">COURSE BUILDER</p>
+            <h1>Add a learning level.</h1>
+
+            <p class="workspace-intro" id="level-course-context">
+                Loading course…
+            </p>
+
+            <p
+                id="level-load-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div class="level-create-layout" id="level-create-view" hidden>
+                <section class="dashboard-card">
+                    <h2>Level details</h2>
+
+                    <p>
+                        Give students a clear goal for this stage
+                        of their learning path.
+                    </p>
+
+                    <form id="level-create-form">
+                        <div class="level-create-field">
+                            <label for="level-title">Level name</label>
+
+                            <input
+                                type="text"
+                                id="level-title"
+                                name="title"
+                                maxlength="80"
+                                placeholder="e.g. Programming fundamentals"
+                                required
+                            >
+                        </div>
+
+                        <div class="level-create-field">
+                            <label for="level-description">
+                                Description
+                            </label>
+
+                            <textarea
+                                id="level-description"
+                                name="description"
+                                rows="5"
+                                maxlength="600"
+                                placeholder="Explain what this level covers."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="level-create-field">
+                            <label for="level-objectives">
+                                Learning objectives
+                            </label>
+
+                            <textarea
+                                id="level-objectives"
+                                name="objectives"
+                                rows="5"
+                                maxlength="1200"
+                                placeholder="Create and use variables&#10;Read user input&#10;Display formatted output"
+                                aria-describedby="level-objectives-help"
+                                required
+                            ></textarea>
+
+                            <p
+                                class="dashboard-footnote"
+                                id="level-objectives-help"
+                            >
+                                Add one objective per line. Use up to
+                                8 objectives, with 150 characters each.
+                            </p>
+                        </div>
+
+                        <p class="dashboard-footnote">
+                            This level will be added after the existing
+                            levels. Lessons and assessments are added separately.
+                        </p>
+
+                        <button
+                            type="submit"
+                            id="level-create-submit"
+                            class="button button-primary"
+                        >
+                            Create level
+                        </button>
+
+                        <p
+                            id="level-create-message"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </form>
+                </section>
+
+                <aside class="level-create-aside">
+                    <section class="dashboard-card">
+                        <p class="eyebrow">LEVEL ORDER</p>
+
+                        <h2 id="level-position">Next level</h2>
+
+                        <p>
+                            Start with foundational skills and build
+                            towards more challenging topics.
+                        </p>
+                    </section>
+
+                    <section class="dashboard-card dashboard-sage">
+                        <h2>Keep the goal clear.</h2>
+
+                        <ul class="roadmap-requirements">
+                            <li>Use a short, specific level name.</li>
+                            <li>Describe what students will learn.</li>
+                            <li>Write objectives students can demonstrate.</li>
+                        </ul>
+                    </section>
+
+                    <section class="dashboard-card">
+                        <h2>Local draft</h2>
+
+                        <p>
+                            Changes are saved in this browser tab.
+                            They are not published to students.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Course builder
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Paths | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-course-data.js" defer></script>
+    <script src="../../js/admin-courses.js" defer></script>
+</head>
+
+<body class="workspace-page admin-page">
+    <a href="#courses-main" class="skip-link">Skip to content</a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html">Students</a>
+            <a href="../../pages/admin/admin-courses.html" aria-current="page">
+                Learning paths
+            </a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">View website</a>
+            <button type="button" id="admin-exit-button">
+                Exit admin preview
+            </button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Learning paths</span>
+            </div>
+
+            <span class="admin-preview-label">Admin preview</span>
+        </header>
+
+        <main class="workspace-main" id="courses-main">
+            <div class="course-page-heading">
+                <div>
+                    <p class="eyebrow">LEARNING CONTENT</p>
+                    <h1>Build paths for every language.</h1>
+
+                    <p class="workspace-intro">
+                        Organize language-specific learning paths
+                        and prepare their content for publication.
+                    </p>
+                </div>
+
+                <a
+                    href="../../pages/admin/admin-course-create.html"
+                    class="button button-primary"
+                >
+                    Create learning path
+                </a>
+            </div>
+
+            <p class="mentor-demo-notice">
+                Sample drafts only. These records do not publish
+                content or enable additional student languages.
+            </p>
+
+            <section
+                class="dashboard-card"
+                aria-labelledby="course-directory-title"
+            >
+                <h2 id="course-directory-title">
+                    Learning path directory
+                </h2>
+
+                <form id="course-filter-form" class="course-filters">
+                    <div class="form-field">
+                        <label for="course-search">
+                            Search learning paths
+                        </label>
+
+                        <input
+                            type="search"
+                            id="course-search"
+                            placeholder="Search by title or language..."
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="course-language-filter">
+                            Language
+                        </label>
+
+                        <select id="course-language-filter">
+                            <option value="all">All languages</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="course-status-filter">
+                            Publication status
+                        </label>
+
+                        <select id="course-status-filter">
+                            <option value="all">All statuses</option>
+                            <option value="draft">Draft</option>
+                            <option value="published">Published</option>
+                        </select>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="course-clear-filters"
+                        class="button button-outline"
+                    >
+                        Clear filters
+                    </button>
+                </form>
+
+                <p
+                    id="course-results-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+                <div id="course-list" class="course-card-grid"></div>
+
+                <div
+                    id="course-empty-state"
+                    class="review-empty-state"
+                    hidden
+                >
+                    <h3>No matching learning paths.</h3>
+                    <p>
+                        Try another search or clear your filters.
+                    </p>
+                </div>
+
+                <noscript>
+                    <p class="form-message is-error">
+                        Enable JavaScript to view sample learning paths.
+                    </p>
+                </noscript>
+            </section>
+
+            <section class="dashboard-card module-section">
+                <h2>Publish with a clear learning structure.</h2>
+
+                <p>
+                    Each language needs its own lessons, practice tasks,
+                    assessments and final project requirements.
+                </p>
+
+                <p class="dashboard-footnote">
+                    When a new version is published, existing students
+                    retain their assigned learning version.
+                </p>
+            </section>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Learning paths
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+

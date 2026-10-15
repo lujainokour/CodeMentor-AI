@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Account Access | CodeMentor AI</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/language-catalog.js" defer></script>
+    <script src="../../js/workspace-shell.js" defer></script>
+
+    <script src="../../js/admin-workspace.js" defer></script>
+    <script src="../../js/admin-student-data.js" defer></script>
+    <script src="../../js/admin-account-access.js" defer></script>
+</head>
+
+<body class="workspace-page admin-page">
+    <a href="#account-access-main" class="skip-link">
+        Skip to content
+    </a>
+
+    <aside class="workspace-sidebar" id="workspace-sidebar">
+        <a href="../../index.html" class="logo">CodeMentor AI</a>
+        <p class="sidebar-label">ADMIN WORKSPACE</p>
+
+        <nav class="workspace-navigation" aria-label="Admin navigation">
+            <a href="../../pages/admin/admin-dashboard.html">Dashboard</a>
+            <a href="../../pages/admin/admin-students.html" aria-current="page">
+                Students
+            </a>
+            <a href="../../pages/admin/admin-courses.html">Learning paths</a>
+            <a href="../../pages/admin/admin-analytics.html">Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../../index.html">View website</a>
+            <button type="button" id="admin-exit-button">
+                Exit admin preview
+            </button>
+        </div>
+    </aside>
+
+    <div class="workspace-body">
+        <header class="workspace-topbar">
+    <script src="../../js/theme.js"></script>
+            <div class="workspace-topbar-left">
+                <button
+                    type="button"
+                    class="workspace-menu-toggle"
+                    id="workspace-menu-toggle"
+                    aria-label="Open navigation"
+                    aria-controls="workspace-sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <span>Admin workspace / Account access</span>
+            </div>
+
+            <span class="admin-preview-label">Admin preview</span>
+        </header>
+
+        <main class="workspace-main" id="account-access-main">
+            <a href="../../pages/admin/admin-students.html" class="module-back">
+                ← Back to students
+            </a>
+
+            <p class="eyebrow">ACCOUNT MANAGEMENT</p>
+            <h1 id="access-page-title">Manage account access.</h1>
+
+            <p class="mentor-demo-notice">
+                Demo only: changes update sample account statuses
+                in this browser tab. They do not enforce real access.
+            </p>
+
+            <p
+                id="access-message"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <section
+                id="access-content"
+                class="dashboard-card account-access-card"
+                aria-labelledby="access-student-name"
+                hidden
+            >
+                <h2 id="access-student-name"></h2>
+                <p id="access-student-email"></p>
+
+                <dl class="student-detail-list">
+                    <div>
+                        <dt>Current status</dt>
+                        <dd>
+                            <span
+                                id="access-current-status"
+                                class="student-status"
+                            ></span>
+                        </dd>
+                    </div>
+                </dl>
+
+                <p id="access-action-description"></p>
+
+                <p class="dashboard-footnote">
+                    This action changes account status only.
+                    It keeps the sample learning information.
+                </p>
+
+                <div class="profile-form-actions">
+                    <a
+                        id="access-back-link"
+                        class="button button-outline"
+                    >
+                        Back to student
+                    </a>
+
+                    <button
+                        type="button"
+                        id="access-action-button"
+                        class="button button-primary"
+                    >
+                        Manage access
+                    </button>
+                </div>
+            </section>
+
+            <dialog
+                id="access-confirm-dialog"
+                class="confirmation-dialog"
+                aria-labelledby="access-confirm-title"
+                aria-describedby="access-confirm-description"
+            >
+                <h2 id="access-confirm-title">Confirm status change</h2>
+
+                <p id="access-confirm-description"></p>
+
+                <form method="dialog" class="dialog-actions">
+                    <button
+                        type="submit"
+                        value="cancel"
+                        class="button button-outline"
+                        autofocus
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        value="confirm"
+                        id="access-confirm-button"
+                        class="button button-primary"
+                    >
+                        Confirm
+                    </button>
+                </form>
+            </dialog>
+
+            <footer class="workspace-footer">
+                CodeMentor AI · Frontend demo · Account access
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
+
